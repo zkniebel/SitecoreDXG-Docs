@@ -11,7 +11,7 @@
   * [General Installation](getting-started/general-installation.md)
     * Install the SitecoreDXG Generation Service
     * Install RabbitMQ
-    * Install the SitecoreUML Service for Sitecore
+    * [Install the SitecoreUML Service for Sitecore](getting-started/general-installation/install-the-sitecoreuml-service-for-sitecore.md)
   * [Advanced Installation](getting-started/advanced-installation.md)
 * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-the-default-rabbitmq-middleman-and-trigger.md)
 * [Documentation Configuration Settings](getting-started/controlling-documentation-configuration-in-sitecore.md)
