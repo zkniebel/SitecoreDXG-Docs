@@ -30,7 +30,7 @@
   * SitecoreDXG Middleman
   * SitecoreUML Service for Sitecore
   * SitecoreDXG Generation Service
-    * Trigger Sub-component
+    * [Trigger Sub-component](architecture/components-overview/trigger-sub-component.md)
     * Completion Handler Sub-component
   * Understanding the Default RabbitMQ Middleman and Trigger
 
