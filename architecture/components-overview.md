@@ -1,6 +1,6 @@
 # Components
 
-A _component _is a modular program or service that is \(primarily\) independent of other programs or systems in/on which they are hosted, and satisfies the responsibilities of a SitecoreDXG _role_. By default, a fully-functional SitecoreDXG ecosystem includes the following components:
+A _component \_is a modular program or service that is \(primarily\) independent of other programs or systems in/on which they are hosted, and satisfies the responsibilities of a SitecoreDXG \_role_. By default, a fully-functional SitecoreDXG ecosystem includes the following components:
 
 1. **SitecoreUML Service for Sitecore: **a service endpoint installed on a Sitecore application \(PaaS or non-PaaS\) as a Sitecore package that satisfies the _serializer_ role
 2. **SitecoreDXG Middleman: **a program that satisfies the _serializer_ role - can be replaced with a own custom middleman implementation, though the **SitecoreDXG RabbitMQ Middleman **is included with SitecoreDXG for rapid setup and use
@@ -8,5 +8,5 @@ A _component _is a modular program or service that is \(primarily\) independent 
 
 The following diagram depicts how these components communicate at a high-level:
 
-...
+![](https://github.com/zkniebel/SitecoreDXG/raw/master/Documentation/assets/SitecoreDXG_Architecture__Components_Overview.png)
 
