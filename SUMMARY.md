@@ -20,25 +20,17 @@
 
 * [Architecture Overview](architecture/architecture-overview.md)
 * [Roles](architecture/roles.md)
-  * [Serializer Role](architecture/serializer-role.md)
-  * Middleman Role
-  * Trigger Role
-  * [Generator Role](architecture/generator.md)
-  * [Completion Handler Role](architecture/completion-handler-role.md)
   * [Role Combinations](architecture/role-combinations.md)
 * [Components](architecture/components-overview.md)
-  * SitecoreDXG Middleman
-  * SitecoreUML Service for Sitecore
-  * SitecoreDXG Generation Service
-    * [Trigger Sub-component](architecture/components-overview/trigger-sub-component.md)
-    * [Completion Handler Sub-component](architecture/components-overview/completion-handler-sub-component.md)
+  * [Trigger Sub-component](architecture/components-overview/trigger-sub-component.md)
+  * [Completion Handler Sub-component](architecture/components-overview/completion-handler-sub-component.md)
   * [Understanding the Default RabbitMQ Middleman and Trigger](architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## How To
 
 * [CI/CD](how-to/cicd.md)
-  * Integrating the default RabbitMQ Middleman
-* Creating a Custom Trigger
-* Creating a Custom Middleman
+  * [Integrating the default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
+* [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
+* [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 * Creating a Custom Completion Handler
 
