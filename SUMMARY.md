@@ -20,7 +20,7 @@
 
 * [Architecture Overview](architecture/architecture-overview.md)
 * [Roles](architecture/roles.md)
-  * Serializer Role
+  * [Serializer Role](architecture/serializer-role.md)
   * Middleman Role
   * Trigger Role
   * [Generator Role](architecture/generator.md)

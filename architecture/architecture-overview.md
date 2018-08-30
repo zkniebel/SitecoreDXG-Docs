@@ -1,6 +1,6 @@
 # Architecture Overview
 
-The SitecoreDXG ecosystem can be described as a combination of _roles_, _components _and _sub-components _that work together to facilitate a functional SitecoreDXG workflow.
+The SitecoreDXG ecosystem can be described as a combination of _roles_, _components_ and _sub-components_ that work together to facilitate a functional SitecoreDXG workflow.
 
-...
+
 
