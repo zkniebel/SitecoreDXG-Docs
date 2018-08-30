@@ -19,7 +19,7 @@
 ## Architecture
 
 * [Architecture Overview](architecture/architecture-overview.md)
-* Roles
+* [Roles](architecture/roles.md)
   * Serializer Role
   * Middleman Role
   * Trigger Role
