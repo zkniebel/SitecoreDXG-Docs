@@ -9,10 +9,14 @@
 
 * [Installing SitecoreDXG](getting-started/installing-sitecoredxg.md)
   * [General Installation](getting-started/general-installation.md)
+    * [Prerequisites](getting-started/general-installation/prerequisites.md)
     * [Install the SitecoreDXG Generation Service](getting-started/general-installation/install-the-sitecoredxg-generation-service.md)
     * [Install RabbitMQ](getting-started/general-installation/install-rabbitmq.md)
     * [Install the SitecoreUML Service for Sitecore](getting-started/general-installation/install-the-sitecoreuml-service-for-sitecore.md)
+    * [\(Optional\) Configure the Documentation Configuration Item for your Solution](getting-started/general-installation/optional-configure-the-documentation-configuration-item-for-your-solution.md)
+    * [\(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](getting-started/general-installation/optional-install-the-default-rabbitmq-middleman.md)
   * [Advanced Installation](getting-started/advanced-installation.md)
+  * [Downloads](getting-started/downloads.md)
 * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-the-default-rabbitmq-middleman-and-trigger.md)
 * [Documentation Configuration Settings](getting-started/controlling-documentation-configuration-in-sitecore.md)
 
