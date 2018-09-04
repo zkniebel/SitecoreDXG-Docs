@@ -18,7 +18,6 @@
   * [Advanced Installation](getting-started/advanced-installation.md)
   * [Downloads](getting-started/downloads.md)
 * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-the-default-rabbitmq-middleman-and-trigger.md)
-* [Documentation Configuration Settings](getting-started/controlling-documentation-configuration-in-sitecore.md)
 
 ## Architecture
 
@@ -28,7 +27,7 @@
 * [Components](architecture/components-overview.md)
   * [Trigger Sub-component](architecture/components-overview/trigger-sub-component.md)
   * [Completion Handler Sub-component](architecture/components-overview/completion-handler-sub-component.md)
-  * [Understanding the Default RabbitMQ Middleman and Trigger](architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md)
+* [Understanding the Default RabbitMQ Middleman and Trigger](architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## How To
 
@@ -37,4 +36,19 @@
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
 * [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
+
+## About the Generated Documentation
+
+* Models
+  * Template Model
+  * Template Field Model
+  * Template Folder Model
+  * Inheritance
+  * Dependencies
+* Diagrams
+  * Templates Diagram
+  * Template Folders Diagram
+  * Layer Diagrams
+  * Module Diagrams
+  * Module Templates Diagrams
 
