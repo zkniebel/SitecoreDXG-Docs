@@ -1,6 +1,71 @@
 # Creating a Custom Trigger
 
-Coming soon...
+Writing a custom trigger for your SitecoreDXG server is meant to be as low-effort and straightforward a task as possible, to enable you to kick off your documentation generation in whatever way you see fit. To create a custom trigger, all you need to do is create a node module \(.JS file\) that looks similar to the below:
+
+```
+#!/usr/local/env node
+
+/**
+ * DEPENDENCIES
+ */
+
+const generation = require("../../generation.js");
+ 
+/**
+ * CONSTANTS
+ */
+
+const TRIGGER_ID = "MyTrigger";
+
+/**
+ * FUNCTIONS
+ */
+
+var _registrationCallback = function () {
+  ...your logic for listening and calling the generation function here...
+};
+
+/**
+ * Registers the trigger for the given triggerManager - this function is required on all trigger modules
+ * @param {object} triggerManager the trigger manager to register the trigger for
+ */
+var registerTrigger = function (triggerManager) {
+  triggerManager.registerTrigger(TRIGGER_ID, _registrationCallback);
+};
+
+exports.TRIGGER_ID = TRIGGER_ID;
+exports.registerTrigger = registerTrigger;
+```
+
+The first thing that you should take note of is the `registerTrigger` function. This function is required, and has the job of performing the registration logic that binds the ID of the trigger to the function that should be called in order to start listening and executing the generation, which in this case is the `_registrationCallback` function.
+
+Strictly speaking, the `TRIGGER_ID` property does not actually need to be made public via `exports`, but it is a good practice to do so anyway.
+
+## Executing Documentation Generation
+
+In order to generate documentation, you need to call the `generateDocumentation` function of the `generation` module. The function has the following syntax:
+
+```
+generation.generateDocumentation(
+  Object data,        // the parsed JSON data response received from the serializer
+  Fn successCallback, // callback to be executed on successful generation
+  Fn errorCallback,   // callback to be executed on generation error
+);
+```
+
+Following this syntax, the below can be used to execute documentation generation:
+
+```
+generation.generateDocumentation(
+  data,
+  function (targetArchiveFilePath, targetArchiveFileName, targetFolderPath, targetHtmlDocFolderPath, targetMdjFilePath) {
+    ...your logic to run on success...
+  },
+  function (error) {
+    ...your logic to run on error...
+  }
+);
+```
 
 
 
