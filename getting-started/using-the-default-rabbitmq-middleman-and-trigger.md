@@ -40,7 +40,7 @@ node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/Ge
 _To retrieve the architecture and add the result to the documentation queue for generation and will tell the Generation Service to call the "foo" and then the "bar" completion handlers when finished..._
 
 ```
-node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost"
+node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost" "generation_queue__documentation" "foo,bar"
 ```
 
 
