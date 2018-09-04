@@ -1,6 +1,6 @@
 # Creating a Custom Trigger
 
-Writing a custom trigger for your SitecoreDXG server is meant to be as low-effort and straightforward a task as possible, to enable you to kick off your documentation generation in whatever way you see fit. To create a custom trigger, all you need to do is create a node module \(.JS file\) that looks similar to the below template:
+Writing a custom trigger for your SitecoreDXG Generation Service is meant to be as low-effort and straightforward a task as possible, to enable you to kick off your documentation generation in whatever way you see fit. To create a custom trigger, all you need to do is create a node module \(.JS file\) that looks similar to the below template:
 
 ```js
 #!/usr/local/env node
