@@ -1,5 +1,5 @@
 <p align="center">
-![SitecoreDXG Logo](/assets/SitecoreDXG-logo-50x50.png)
+  <img src="https://zkniebel.gitbooks.io/sitecoredxg/content/assets/SitecoreDXG-logo-50x50.png" alt="SitecoreDXG Logo" />
 </p>
 
 <h1 align="center">SitecoreDXG: The Documentation Experience Generator</h1>
