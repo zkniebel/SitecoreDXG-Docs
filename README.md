@@ -1,5 +1,5 @@
 <p align="center">
-![SitecoreDXG Logo](/assets/SitecoreUML-Logo-50x50.png)
+![SitecoreDXG Logo](/assets/SitecoreDXG-logo-50x50.png)
 </p>
 
 <h1 align="center">SitecoreDXG: The Documentation Experience Generator</h1>
