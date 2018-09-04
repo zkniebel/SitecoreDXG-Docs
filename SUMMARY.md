@@ -34,6 +34,8 @@
 * [CI/CD](how-to/cicd.md)
   * [Integrating the Default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
+  * [Executing Documentation Generation](how-to/creating-a-custom-trigger/executing-documentation-generation.md)
+  * [Executing Meta-Data JSON Generation](how-to/creating-a-custom-trigger/executing-meta-data-json-generation.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
 * [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 
