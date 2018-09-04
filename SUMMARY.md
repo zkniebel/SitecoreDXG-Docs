@@ -32,10 +32,10 @@
 ## How To
 
 * [CI/CD](how-to/cicd.md)
-  * [Integrating the default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
+  * [Integrating the Default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
-* [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
+* [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 
 ## About the Generated Documentation
 
