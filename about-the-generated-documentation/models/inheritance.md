@@ -1,0 +1,6 @@
+# Inheritance
+
+Coming soon...
+
+
+

@@ -41,16 +41,17 @@
 
 ## About the Generated Documentation
 
-* Models
-  * Template Model
-  * Template Field Model
-  * Template Folder Model
-  * Inheritance
-  * Dependencies
-* Diagrams
-  * Templates Diagram
-  * Template Folders Diagram
-  * Layer Diagrams
-  * Module Diagrams
-  * Module Templates Diagrams
+* [Models](about-the-generated-documentation/models.md)
+  * [Template Model](about-the-generated-documentation/models/template-model.md)
+  * [Template Field Model](about-the-generated-documentation/models/template-field-model.md)
+  * [Template Folder Model](about-the-generated-documentation/models/template-folder-model.md)
+  * [Inheritance](about-the-generated-documentation/models/inheritance.md)
+  * [Dependencies](about-the-generated-documentation/models/dependencies.md)
+* [Diagrams](about-the-generated-documentation/diagrams.md)
+  * [SitecoreUML Syntax](about-the-generated-documentation/diagrams/sitecoreuml-syntax.md)
+  * [Templates Diagram](about-the-generated-documentation/diagrams/templates-diagram.md)
+  * [Template Folders Diagram](about-the-generated-documentation/diagrams/template-folders-diagram.md)
+  * [Layer Diagrams](about-the-generated-documentation/diagrams/layer-diagrams.md)
+  * [Module Diagrams](about-the-generated-documentation/diagrams/module-diagrams.md)
+  * [Module Templates Diagrams](about-the-generated-documentation/diagrams/module-templates-diagrams.md)
 
