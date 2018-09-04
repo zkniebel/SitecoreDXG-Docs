@@ -1,7 +1,5 @@
 <p align="center">
-	<a href="https://github.com/zkniebel/SitecoreDXG/">
-		<img src="https://github.com/zkniebel/SitecoreDXG/blob/master/Documentation/assets/SitecoreDXG-logo-50x50.png?raw=true" alt="SitecoreDXG" />
-	</a>
+![SitecoreDXG Logo](/assets/SitecoreUML-Logo-50x50.png)
 </p>
 
 <h1 align="center">SitecoreDXG: The Documentation Experience Generator</h1>
