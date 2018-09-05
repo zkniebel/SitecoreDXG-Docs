@@ -17,7 +17,8 @@
     * [5. \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](getting-started/general-installation/optional-install-the-default-rabbitmq-middleman.md)
   * [Advanced Installation](getting-started/advanced-installation.md)
   * [Downloads](getting-started/downloads.md)
-* [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-the-default-rabbitmq-middleman-and-trigger.md)
+* [Using SitecoreDXG](getting-started/using-sitecoredxg.md)
+  * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## Architecture
 
