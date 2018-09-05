@@ -12,7 +12,7 @@ By default, generation should start by executing the default RabbitMQ Middleman,
 
 At a high-level, the out of the box process works in the following way \(using the RabbitMQ middleman and trigger\):
 
-1. Middleman runs
+1. Middleman runs \([executed from CLI or automated process](/getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md)\)
    1. Retrieves serialized data from SitecoreUML Service that is installed on the desired Sitecore instance
    2. Submits returned response to the desired RabbitMQ generation queue \(`generation_queue__documentation` for generating HTML documentation or `generation_queue__mdj` for generating just the Meta-Data JSON file\)
 2. Trigger runs
