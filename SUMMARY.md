@@ -32,8 +32,9 @@
 
 ## How To
 
-* [CI/CD](how-to/cicd.md)
+* [CI/CD Integration](how-to/cicd.md)
   * [Integrating the Default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
+  * [Integrating the Default TeamCity RabbitMQ Meta-Runner](how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md)
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
   * [Executing Documentation Generation](how-to/creating-a-custom-trigger/executing-documentation-generation.md)
   * [Executing Meta-Data JSON Generation](how-to/creating-a-custom-trigger/executing-meta-data-json-generation.md)
