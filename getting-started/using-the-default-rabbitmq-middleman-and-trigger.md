@@ -10,8 +10,8 @@ node rabbitmq-amqp-middleman ARCHITECURE_GET_URL CONNECTION_STRING GENERATION_QU
 
 The middleman's parameters are as follows:
 
-* `ARCHITECTURE_GET_URL`**: **the URL to get the serialized template architecture from
 * `CONNECTION_STRING`**: **the RabbitMQ connection string to connect to
+* `ARCHITECTURE_GET_URL`**: **the URL to get the serialized template architecture from
 * `GENERATION_QUEUE_NAME`**: **the name of the generation queue to add the serialized response to
 * `COMPLETION_HANDLER_NAMES`**: **\(optional\) a comma-separated string list of the names of the completion handlers that the Generation Server should call after generation completes
 
@@ -22,25 +22,25 @@ The following examples show how you can call the RabbitMQ middleman on a Habitat
 _To retrieve the architecture and add the result to the documentation queue for generation..._
 
 ```
-node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost" "generation_queue__documentation"
+node rabbitmq-amqp-middleman amqp://localhost http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "generation_queue__documentation"
 ```
 
 _To retrieve the architecture and add the result to the metadata-json queue for generation..._
 
 ```
-node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost" "generation_queue__mdj"
+node rabbitmq-amqp-middleman amqp://localhost http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "generation_queue__mdj"
 ```
 
 _To retrieve the architecture and add the result to the documentation queue for generation and will tell the Generation Service to call a completion handler named "helloWorld" when finished..._
 
 ```
-node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost" "generation_queue__documentation" "helloWorld"
+node rabbitmq-amqp-middleman amqp://localhost http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "generation_queue__documentation" "helloWorld"
 ```
 
 _To retrieve the architecture and add the result to the documentation queue for generation and will tell the Generation Service to call the "foo" and then the "bar" completion handlers when finished..._
 
 ```
-node rabbitmq-amqp-middleman http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "amqp://localhost" "generation_queue__documentation" "foo,bar"
+node rabbitmq-amqp-middleman amqp://localhost http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "generation_queue__documentation" "foo,bar"
 ```
 
 
