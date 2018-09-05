@@ -5,7 +5,7 @@ The RabbitMQ Middleman can be found in the`.\middlemen\RabbitMQ\\`folder. Feel f
 The RabbitMQ Middleman should be called using the following command-line syntax:
 
 ```
-node rabbitmq-amqp-middleman ARCHITECURE_GET_URL CONNECTION_STRING GENERATION_QUEUE_NAME [COMPLETION_HANDLER_NAMES]
+node rabbitmq-amqp-middleman CONNECTION_STRING ARCHITECURE_GET_URL GENERATION_QUEUE_NAME [COMPLETION_HANDLER_NAMES]
 ```
 
 The middleman's parameters are as follows:
