@@ -10,6 +10,7 @@ Writing a custom trigger for your SitecoreDXG Generation Service is meant to be 
  */
  
 
+
 /**
  * CONSTANTS
  */
