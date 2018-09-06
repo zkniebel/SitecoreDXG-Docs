@@ -1,6 +1,6 @@
 # Step 1: Install the SitecoreDXG Generation Service
 
-The first step in installing SitecoreDXG is installing the Generation Service on the desired machine, keeping in mind that it does not have to be installed on the same machine as the RabbitMQ server, the middleman or the Sitecore instance. 
+The first step in installing SitecoreDXG is installing the Generation Service on the desired machine, keeping in mind that _**the SitecoreDXG Generation Service does not have to be installed on the same machine as the RabbitMQ server, the middleman or the Sitecore instance.**_
 
 ### Prerequisites
 

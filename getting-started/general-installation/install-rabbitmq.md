@@ -1,8 +1,8 @@
 # Step 2: Install RabbitMQ
 
-The second step in the installation is to install RabbitMQ, keeping in mind that it can be installed on the same machine as other components, on its own machine, or cloud hosted. 
+The second step in the installation is to install RabbitMQ, keeping in mind that _**RabbitMQ can be installed on the same machine as other components, on its own dedicated machine, or it can be cloud hosted.**_
 
-The below documentation assumes that you are installing RabbitMQ yourself on a Windows machine, but this is not required.
+The below documentation assumes that you are installing RabbitMQ on a Windows machine, though you should be able to adapt these instructions to your desired deployment topology, as needed.
 
 ### Step 2a: Install RabbitMQ \(verified with 3.7.6+\)
 
