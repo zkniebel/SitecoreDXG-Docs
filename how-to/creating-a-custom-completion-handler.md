@@ -29,7 +29,6 @@ To create a custom completion handler, you will need to create a node module \(.
  */
 
 
-
 /**
  * CONSTANTS
  */
