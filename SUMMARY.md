@@ -9,7 +9,6 @@
 
 * [Installing SitecoreDXG](getting-started/installing-sitecoredxg.md)
   * [General Installation](getting-started/general-installation.md)
-    * [0. Prerequisites](getting-started/general-installation/prerequisites.md)
     * [1. Install the SitecoreDXG Generation Service](getting-started/general-installation/install-the-sitecoredxg-generation-service.md)
     * [2. Install RabbitMQ](getting-started/general-installation/install-rabbitmq.md)
     * [3. Install the SitecoreUML Service for Sitecore](getting-started/general-installation/install-the-sitecoreuml-service-for-sitecore.md)

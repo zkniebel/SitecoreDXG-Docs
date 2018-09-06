@@ -1,6 +1,10 @@
 # Step 1: Install the SitecoreDXG Generation Service
 
-The first step in installing SitecoreDXG is installing the Generation Service.
+The first step in installing SitecoreDXG is installing the Generation Service on the desired machine, keeping in mind that it does not have to be installed on the same machine as the RabbitMQ server, the middleman or the Sitecore instance. 
+
+### Prerequisites
+
+The installation instructions for the SitecoreDXG Generation Service assume that you have [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on the target machine prior to beginning the installation.
 
 ### Step 1a: Install the [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation---Windows) dependencies
 

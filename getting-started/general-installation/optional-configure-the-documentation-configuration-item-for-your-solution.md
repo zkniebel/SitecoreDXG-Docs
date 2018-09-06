@@ -1,5 +1,7 @@
 # Step 4: \(Optional\) Configure the Documentation Configuration Item for your Solution
 
+_**Be sure that you have completed the installation of the **_[_**SitecoreUML Service for Sitecore**_](/getting-started/general-installation/install-the-sitecoreuml-service-for-sitecore.md)_** before proceeding with this step.**_
+
 The latest version of the [SitecoreUML Service for Sitecore](https://github.com/zkniebel/SitecoreUML/releases/latest) includes a new _Documentation Configuration_ item, found at _/sitecore/system/Modules/SitecoreUML/Documentation Configuration_ \(by default; you can change this in the _SitecoreUML.config_\), that controls some of the options for how your documentation should be generated. Note that while setting up the _Documentation Configuration_ item is optional, **if you do not configure the item then none of the Helix Diagrams will be generated.**
 
 Each of the following steps is optional, but recommended:
