@@ -6,7 +6,7 @@ In order to understand how SitecoreDXG works, It is suggested that you review th
 
 ## Executing Generation
 
-By default, generation should start by executing the default RabbitMQ Middleman, which will handle kicking off the rest of the process. See [Understanding the Default RabbitMQ Middleman and Trigger](/architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md) and [Using the Default RabbitMQ Middleman and Trigger](/getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md) for more details.
+By default, the generation process should start by executing the default RabbitMQ Middleman, which will handle kicking off the rest of the process. See [Understanding the Default RabbitMQ Middleman and Trigger](/architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md) and [Using the Default RabbitMQ Middleman and Trigger](/getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md) for more details.
 
 ## High-Level Execution Flow
 
