@@ -28,12 +28,6 @@ To create a custom completion handler, you will need to create a node module \(.
  * DEPENDENCIES
  */
 
-// third-party
-const winston = require("winston");
-
-// local
-const logger = require("../../logging.js").logger;
-
 
 /**
  * CONSTANTS
@@ -49,8 +43,10 @@ const COMPLETIONHANDLER_ID = "helloWorld!";
 /**
  * Executes the completion handler with the given output directory path 
  * @param {string} outputDirectoryPath the path to the output directory
+ * @param {object} logger the logger
+ * @param {Array<*>} params array of custom parameters
  */
-var _execute = function (outputDirectoryPath) {
+var _execute = function (outputDirectoryPath, logger, params) {
   logger.info(`hello World! Output path is: "${outputDirectoryPath}"`);
 };
 
@@ -74,12 +70,8 @@ Strictly speaking, the `COMPLETIONHANDLER_ID` property does not actually need to
 
 In order to add a custom completion handler to the SitecoreDXG Generation Service, you need to perform the following steps:
 
-1. Navigate to the `[SitecoreDXG-Installation-Root]/completion\_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion\_handlers` folder, e.g. `./completion\_handlers/Custom`, for better organization. **IMPORTANT:** the location that you choose for storing the completion handler file will directly affect the path of the `logging` module and any other modules that you use from SitecoreDXG. In the above example, the completion handler is assumed to be in a sub-directory, one level deep, ergo the path of the module that is required is `../../logging.js`.
+1. Navigate to the `[SitecoreDXG-Installation-Root]/completion\_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion\_handlers` folder, e.g. `./completion\_handlers/Custom`, for better organization. 
 2. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
-
-## Limitations of Completion Handlers
-
-At present, completion handlers are limited in that they cannot be passed custom parameters and are only passed the output path from the generation. This is something that is planned to change prior to initial release. If you are working on a custom completion handler and are looking to pass it custom parameters, please reach out to me via Sitecore Slack \(@zachary\_kniebel\) if you have any issues, questions or want to ensure that your implementation will not introduce breaking changes with the initial release version once made available.
 
 
 

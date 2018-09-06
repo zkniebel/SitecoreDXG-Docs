@@ -17,8 +17,6 @@ generation.generateMetaDataJson(
 Following this syntax, the below can be used to execute the Meta-Data JSON file generation:
 
 ```js
-const generation = require("../../generation.js");
-
 generation.generateMetaDataJson(
   data,
   function function (mdjPath, targetFileName, targetFolderPath, targetFilePath) {

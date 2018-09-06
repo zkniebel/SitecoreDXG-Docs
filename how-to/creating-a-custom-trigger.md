@@ -8,8 +8,7 @@ Writing a custom trigger for your SitecoreDXG Generation Service is meant to be 
 /**
  * DEPENDENCIES
  */
-
-const generation = require("../../generation.js");
+ 
 
 /**
  * CONSTANTS
@@ -21,7 +20,7 @@ const TRIGGER_ID = "MyTrigger";
  * FUNCTIONS
  */
 
-var _registrationCallback = function () {
+var _registrationCallback = function (configurationLoader, generation, logger) {
   ...your logic for listening and calling the generation function here...
 };
 
@@ -45,7 +44,7 @@ Strictly speaking, the `TRIGGER_ID` property does not actually need to be made p
 
 In order to add a custom trigger to the SitecoreDXG Generation Service, you need to perform the following steps:
 
-1. Navigate to the `[SitecoreDXG-Installation-Root]/triggers` folder and copy in your custom trigger file. SitecoreDXG will dynamically load all files in this folder as triggers. Note that it is recommended that you add your trigger file into a sub-directory of the `./triggers` folder, e.g. `./triggers/Custom`, for better organization. **IMPORTANT:** the location that you choose for storing the trigger file will directly affect the path of the SitecoreDXG `generation` module. In the above template, the triggers are assumed to be in a sub-directory, one level deep, ergo the path of the module that is required is `../../generation.js`.
+1. Navigate to the `[SitecoreDXG-Installation-Root]/triggers` folder and copy in your custom trigger file. SitecoreDXG will dynamically load all files in this folder as triggers. Note that it is recommended that you add your trigger file into a sub-directory of the `./triggers` folder, e.g. `./triggers/Custom`, for better organization.
 2. Open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `Trigger` property to the ID of your custom trigger. This will tell SitecoreDXG that your custom trigger is the one that should be registered and used. 
 
 

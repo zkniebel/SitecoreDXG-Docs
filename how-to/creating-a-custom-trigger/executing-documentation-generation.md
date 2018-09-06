@@ -15,8 +15,6 @@ generation.generateDocumentation(
 Following this syntax, the below can be used to execute documentation generation:
 
 ```js
-const generation = require("../../generation.js");
-
 generation.generateDocumentation(
   data,
   function (targetArchiveFilePath, targetArchiveFileName, targetFolderPath, targetHtmlDocFolderPath, targetMdjFilePath) {
