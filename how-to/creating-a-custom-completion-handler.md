@@ -27,7 +27,7 @@ To create a custom completion handler, you will need to create a node module \(.
 /**
  * DEPENDENCIES
  */
- 
+
 
 
 /**
@@ -63,7 +63,7 @@ exports.COMPLETIONHANDLER_ID = COMPLETIONHANDLER_ID;
 exports.registerCompletionHandler = registerCompletionHandler;
 ```
 
-The first thing that you should take note of in the above template is the `registerCompletionHandler` function. This function is required, and has the job of performing the registration logic that binds the ID of the completion handler to the function that should be called, which in this case is the `_execute` callback function, in order to run the desired logic on the generated output.
+The first thing that you should take note of in the above example is the `registerCompletionHandler` function. This function is required, and has the job of performing the registration logic that binds the ID of the completion handler to the function that should be called, which in this case is the `_execute` callback function, in order to run the desired logic on the generated output.
 
 Strictly speaking, the `COMPLETIONHANDLER_ID` property does not actually need to be made public via `exports`, but it is a good practice to do so anyway.
 
