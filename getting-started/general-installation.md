@@ -2,6 +2,12 @@
 
 This section will walk you through the process of installing SitecoreDXG using the out of the box components provided with the software.
 
+One of the things that should be noted about the default setup of SitecoreDXG using RabbitMQ is that **not all of the components need to be installed together on the same machine**. For example, the SitecoreDXG Generation Service can be on one server, while RabbitMQ is on another \(or cloud hosted\) and the middleman is on yet another server.
+
+With that in mind, the following instructions will guide you through the installation.
+
+## Installation Steps
+
 First, ensure that you have all of the [Prerequisites](/getting-started/general-installation/prerequisites.md) installed. Then move onto the installation:
 
 1. [Install the SitecoreDXG Generation Service](/getting-started/general-installation/install-the-sitecoredxg-generation-service.md)
