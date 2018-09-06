@@ -73,5 +73,16 @@ In order to add a custom completion handler to the SitecoreDXG Generation Servic
 1. Navigate to the `[SitecoreDXG-Installation-Root]/completion\_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion\_handlers` folder, e.g. `./completion\_handlers/Custom`, for better organization. 
 2. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
 
+## Completion Handler Ideas
+
+The following are some ideas for completion handlers that could be written for more robust generation setups:
+
+* **Output Copy Handler: **copy the output from the output folder to a specific location on the SitecoreDXG Generation Service machine or a networked location
+* **POST-Upload Output Handler:** uploads the output via POST request to a specified REST endpoint
+* **Azure Blob Deploy Handler:** upload the output to Azure Blob Storage at a specific location from where it can be served to users \(directly or through a CDN\)
+* **RabbitMQ Return Handler:** send the output back to the middleman or to another location by adding it to a result queue via RabbitMQ
+
+**And more!** The point is that completion handlers are low-effort to implement and can serve any purpose that you need.
+
 
 
