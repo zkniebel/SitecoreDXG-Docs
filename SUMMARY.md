@@ -18,6 +18,7 @@
   * [Downloads](getting-started/downloads.md)
 * [Using SitecoreDXG](getting-started/using-sitecoredxg.md)
   * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md)
+  * [Using the Provided AWS S3 Deploy Completion Handler](getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md)
 
 ## Architecture
 
