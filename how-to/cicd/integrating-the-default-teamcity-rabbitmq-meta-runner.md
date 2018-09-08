@@ -8,5 +8,5 @@ SitecoreDXG includes a TeamCity meta-runner that can be found in the same folder
 4. Select "SitecoreDXG RabbitMQ Middleman Runner" from the "Runner Type" drop-down and fill in the fields with the relevant details, following the help-text for each field. Be sure to set the _Script Path_ to the location where you copied the RabbitMQ middleman folder's contents in _step 2_
 5. Run your build and confirm that the architecture was successfully added to the generation queue in the build log \(via checking that the correct number of bytes was sent to the queue\) 
 
-
+![](/assets/SitecoreDXG-TeamCity-MetaRunner.png)
 
