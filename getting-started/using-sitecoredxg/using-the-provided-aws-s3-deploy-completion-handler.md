@@ -35,7 +35,7 @@ In order to pass this object to the handler, it should be passed in as the first
 }]
 ```
 
-### Important Note About AWS S3
+### Important Note About Folders in AWS S3
 
 The S3 buckets in AWS don't have a real concept of "folders", but S3 can be made to behave similar to the way you would expect it to if it did have folders, so long as you use a forward slash \(`/`\) as the delimiter of your path slugs. For example, in the above, the value `"MySite/UAT"` will effectively function as though the `/UAT` folder is a subdirectory of `/MySite`.
 
