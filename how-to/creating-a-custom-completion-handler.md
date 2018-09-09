@@ -1,6 +1,8 @@
 # Creating a Custom Completion Handler
 
-While SitecoreDXG generates documentation for you, what do you do with the documentation once generation has completed is entirely up to you. SitecoreDXG supports the execution of one or more completion handlers after successful generation, and ships with an example, _helloWorld_, completion handler to help you create handlers of your own.
+While SitecoreDXG generates documentation for you, what do you do with the documentation once generation has completed is entirely up to you. SitecoreDXG supports the execution of one or more completion handlers after successful generation, and ships with an example completion handler, _helloWorld_, and a practical completion handler, [_AWS S3 Deploy_](/getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md), to help you create handlers of your own.
+
+Completion Handlers can be self-contained modules, in that they can have their own _package.json_ files and their own local dependencies without having to modify the SitecoreDXG Generation Service's _package.json_ file in any way. If a _package.json_ file is detected for a completion handler, the completion handler module and its dependencies are automatically installed immediately before the SitecoreDXG Generation Service when calling `npm install` in the SitecoreDXG Generation Service's root.
 
 It is expected that users will want to write their own and/or customize existing completion handlers for their specific use-cases, and it is assumed that completion handlers will be the most widely-customized piece of SitecoreDXG. For this reason, creating and customizing completion handlers is meant to be as low-effort and straightforward a task as possible, to enable you to use your generated output in whatever way you see fit.
 
