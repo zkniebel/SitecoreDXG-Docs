@@ -4,14 +4,13 @@ SitecoreDXG includes the AWS S3 Deploy Completion Handler for deploying the gene
 
 ## Setup
 
-1. Run the command `npm install` in your SitecoreDXG Generation Service's installation folder to ensure that the dependencies for your completion handler are up to date
-2. Go to the [AWS Console](https://signin.aws.amazon.com) and create and/or retrieve the details for the AWS S3 bucket and user that you intend to use
+1. Go to the [AWS Console](https://signin.aws.amazon.com) and create and/or retrieve the details for the AWS S3 bucket and user that you intend to use
    1. Create a new S3 bucket if you don't already have one that you intend to use
    2. In the AWS Console, create an IAM user with access to the bucket, if you don't already have one that you intend to use, and record the access key ID and secret access key for later use
    3. Configure the policy and management settings for your AWS S3 Bucket so that it can be served as a static website
    4. Configure the policy for your IAM user or its group \(group recommended\) so that the you can upload, download, list and delete objects to/from the S3 bucket
-3. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
-4. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
+2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
+3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
 ## Parameters
 
