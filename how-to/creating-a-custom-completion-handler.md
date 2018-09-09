@@ -71,8 +71,10 @@ Strictly speaking, the `COMPLETIONHANDLER_ID` property does not actually need to
 In order to add a custom completion handler to the SitecoreDXG Generation Service, you need to perform the following steps:
 
 1. Navigate to the `[SitecoreDXG-Installation-Root]/completion\_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion\_handlers` folder, e.g. `./completion\_handlers/Custom`, for better organization. 
-2. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
-3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
+2. \(Optional\) **If your custom completion handler uses third-party modules** then it is recommended that you create a _package.json_ file for it either manually or by calling `npm init` and then add the third-party modules to the package's dependencies. This will help keep your custom completion handler more self-contained and modular, while avoiding the need to make changes to the SitecoreDXG Generation Service's native _package.json_
+3. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
+4. **If your completion handler uses third-party modules and has its own **_**package.json**_** file **then be sure to run `npm install` in either the SitecoreDXG Generation Service root or in the completion handler's root to install the dependencies
+5. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
 ## Completion Handler Ideas
 

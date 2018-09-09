@@ -44,9 +44,11 @@ Strictly speaking, the `TRIGGER_ID` property does not actually need to be made p
 
 In order to add a custom trigger to the SitecoreDXG Generation Service, you need to perform the following steps:
 
-1. Navigate to the `[SitecoreDXG-Installation-Root]/triggers` folder and copy in your custom trigger file. SitecoreDXG will dynamically load all files in this folder as triggers. Note that it is recommended that you add your trigger file into a sub-directory of the `./triggers` folder, e.g. `./triggers/Custom`, for better organization.
-2. Open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `Trigger` property to the ID of your custom trigger. This will tell SitecoreDXG that your custom trigger is the one that should be registered and used. 
-3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
+1. Navigate to the `[SitecoreDXG-Installation-Root]/triggers` folder and copy in your custom trigger file. SitecoreDXG will dynamically load all files in this folder as triggers. Note that it is recommended that you add your trigger file into a sub-directory of the `./triggers` folder, e.g. `./triggers/Custom`, for better organization. 
+2. \(Optional\) **If your custom trigger uses third-party modules** then it is recommended that you create a _package.json_ file for it either manually or by calling `npm init` and then add the third-party modules to the package's dependencies. This will help keep your custom trigger more self-contained and modular, while avoiding the need to make changes to the SitecoreDXG Generation Service's native _package.json_
+3. Open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `Trigger` property to the ID of your custom trigger. This will tell SitecoreDXG that your custom trigger is the one that should be registered and used. 
+4. **If your trigger uses third-party modules and has its own **_**package.json**_** file **then be sure to run `npm install` in either the SitecoreDXG Generation Service root or in the trigger's root to install the dependencies
+5. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
 
 
