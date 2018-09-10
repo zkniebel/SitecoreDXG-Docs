@@ -8,11 +8,15 @@ It should be noted that [Static Website Hosting](https://azure.microsoft.com/en-
 
 ## Setup
 
-1. Go to the [Azure portal](https://portal.azure.com) and create and/or retrieve the details for the Azure Blob Storage account and container that you want to use. _You will need the connection string for your ABS account, the name of the container that you want to deploy to \(must exist, and should be `$web` as it is created automatically when enabling your storage account for Static Hosting\) and \(optionally\) the name of the directory within that container that you want to deploy to_
+1. Go to the [Azure portal](https://portal.azure.com) and create and/or retrieve the details for the Azure Blob Storage account and container that you want to use. _You will need the connection string for your ABS account, the name of the container that you want to deploy to \(must exist, and should be _`$web`_ as it is created automatically when enabling your storage account for Static Hosting\) and \(optionally\) the name of the directory within that container that you want to deploy to_
    1. See the [Getting Started](https://azure.microsoft.com/en-us/blog/azure-storage-static-web-hosting-public-preview/) instructions provided by Azure for more information
    2. **IMPORTANT:** make sure that you select "General Purpose v2" \(GPv2\) for your storage account type, as this cannot be changed later and currently only GPv2 supports static website hosting
 2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
 3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
+
+#### WARNING: You should always deploy to an empty directory
+
+The ABS Deploy Completion Handler is designed to perform clean deployments, meaning that any files in the targeted deployment directory in the Azure Blob Storage container will be deleted immediately prior to the deployment. You can use the `AzureStorageTargetDirectory` parameter to set the target deployment location to somewhere other than the container's root \(the default\). Note that anything in the target directory \(or the root if the target directory is not set\) will be deleted.
 
 ## Parameters
 

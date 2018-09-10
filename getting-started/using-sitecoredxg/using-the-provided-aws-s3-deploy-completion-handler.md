@@ -47,6 +47,10 @@ SitecoreDXG includes the AWS S3 Deploy Completion Handler for deploying the gene
 2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
 3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
+#### WARNING: You should always deploy to an empty directory
+
+The AWS S3 Deploy Completion Handler is designed to perform clean deployments, meaning that any files in the targeted S3 folder will be deleted immediately prior to the deployment. You can use the `S3FolderPath` parameter to set the target deployment location to somewhere other than the bucket's root \(the default\). Note that anything in the target directory \(or the root if the target directory is not set\) will be deleted.
+
 ## Parameters
 
 The AWS S3 Deploy Completion Handler **requires a single parameter** that holds a JSON object with the following syntax:
