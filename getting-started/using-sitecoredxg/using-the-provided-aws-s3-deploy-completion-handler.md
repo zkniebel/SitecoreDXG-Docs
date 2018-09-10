@@ -7,8 +7,43 @@ SitecoreDXG includes the AWS S3 Deploy Completion Handler for deploying the gene
 1. Go to the [AWS Console](https://signin.aws.amazon.com) and create and/or retrieve the details for the AWS S3 bucket and user that you intend to use
    1. Create a new S3 bucket if you don't already have one that you intend to use
    2. In the AWS Console, create an IAM user with access to the bucket, if you don't already have one that you intend to use, and record the access key ID and secret access key for later use
-   3. Configure the policy and management settings for your AWS S3 Bucket so that it can be served as a static website
-   4. Configure the policy for your IAM user or its group \(group recommended\) so that the you can upload, download, list and delete objects to/from the S3 bucket
+   3. Configure the policy and management settings for your AWS S3 Bucket so that it can be served as a static website. The following is the JSON for a policy that could be used for a bucket named "mybucket":
+      ```js
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Sid": "PublicReadGetObject",
+                  "Effect": "Allow",
+                  "Principal": "*",
+                  "Action": "s3:GetObject",
+                  "Resource": "arn:aws:s3:::mybucket/*"
+              }
+          ]
+      }
+      ```
+   4. Configure the policy for your IAM user or its group \(group recommended\) so that the you can upload, download, list and delete objects to/from the S3 bucket. The following is the JSON for a policy that could be used to give a user/group the necessary access to a bucket named "mybucket":
+      ```js
+      {
+          "Version": "2012-10-17",
+          "Statement": [
+              {
+                  "Sid": "AllowUserReadWriteDeleteListDataObjectForMyBucketS3",
+                  "Effect": "Allow",
+                  "Action": [
+                      "s3:PutObject",
+                      "s3:ListBucket",
+                      "s3:GetBucketLocation",
+                      "s3:DeleteObject"
+                  ],
+                  "Resource": [
+                      "arn:aws:s3:::*/*",
+                      "arn:aws:s3:::mybucket"
+                  ]
+              }
+          ]
+      }
+      ```
 2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
 3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
