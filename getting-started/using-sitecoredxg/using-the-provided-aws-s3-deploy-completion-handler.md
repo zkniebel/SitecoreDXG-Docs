@@ -88,7 +88,7 @@ _This section describes how you can call the S3 Deploy Handler from the default 
    ```js
    '[{\"ID\":\"AWS_S3\",\"Params\":[{\"AccessKeyId\":\"YOUR_AWS_ACCESS_KEY_ID\",\"SecretAccessKey\":\"YOUR_AWS_SECRET_ACCESS_KEY",\"S3BucketName\":\"MyS3Bucket\",\"S3FolderPath\":\"MySite/UAT\"}]}]'
    ```
-4. Pass the strigified completion handler data array to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
+4. Pass the stringified completion handler data array to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
    1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](/getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
    2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](/how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
 
