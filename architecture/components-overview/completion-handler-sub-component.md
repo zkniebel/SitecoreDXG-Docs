@@ -1,6 +1,6 @@
 # Completion Handler Sub-component
 
-SitecoreDXG ships with an example _completion handler_, helloWorld.js, to help those looking to create handlers for themselves. Because completion handler logic is generally specific to the requirements of the end-user's CD/CD architecture, no handlers are configured to be called by default for SitecoreDXG, out of the box. SitecoreDXG does include completion handlers for deploying to an AWS S3 bucket or an Azure Blob Storage container \(and others will be added in the future\), though using them completion handler is entirely optional.
+SitecoreDXG ships with an example _completion handler_, helloWorld.js, to help those looking to create handlers for themselves. Because completion handler logic is generally specific to the requirements of the end-user's CD/CD architecture, no handlers are configured to be called by default for SitecoreDXG, out of the box. SitecoreDXG does include completion handlers for deploying to an AWS S3 bucket or an Azure Blob Storage container \(and others will be added in the future\), though using the completion handler is entirely optional.
 
 See [Creating a Custom Completion Handler](/how-to/creating-a-custom-completion-handler.md) for more details on the example and how to write your own completion handlers.
 
