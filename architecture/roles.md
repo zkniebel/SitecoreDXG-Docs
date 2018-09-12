@@ -10,5 +10,5 @@ A _role_ is a responsibility to satisfy a particular piece of logic and/or task 
 
 The following diagram shows the general communication workflow between these roles. Note that this workflow may change slightly depending on how you choose to use SitecoreDXG and implement your Middleman and Trigger.
 
-![](https://github.com/zkniebel/SitecoreDXG/raw/master/Documentation/assets/SitecoreDXG_Architecture__Direct_Communication_Workflow__Roles.png)
+![](/assets/SitecoreDXG_Architecture__Direct_Communication_Workflow__Roles.png)
 
