@@ -51,6 +51,7 @@ Once you have installed all of the [_node-canvas_](https://github.com/Automattic
 5. Go to the Services manager and ensure that the SitecoreDXG Generation Service is started
    * If it is started then feel free to customize startup and account settings for the service as desired
    * If it is not, check your SitecoreDXG logs for errors or try starting the application manually from the command-line for troubleshooting
+6. \(Optional\) Because SitecoreDXG doesn't automatically delete old output or log files, it is suggested that you set up a custom Windows scheduled task or something similar to perform the cleanup, in order to avoid your server running out of storage space. If you would like to set up a custom Windows scheduled task, [this article](https://jackworthen.com/2018/03/15/creating-a-scheduled-task-to-automatically-delete-files-older-than-x-in-windows/) can help to guide you through the process. Note that you can find the location of your logs and work directories by looking at your `./settings.js` file \(the default paths are `C:/SitecoreDXG/Work` and `C:/SitecoreDXG/Logs`\).
 
 
 
