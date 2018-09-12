@@ -1,6 +1,6 @@
 # Roles
 
-A _role_ is a program or sub-routine that satisfies a particular piece of logic and/or the communication flow required for SitecoreDXG. A fully-functional SitecoreDXG ecosystem consists of the following roles:
+A _role_ is a responsibility to satisfy a particular piece of logic and/or task in the communication flow required for SitecoreDXG. A fully-functional SitecoreDXG ecosystem consists of the following roles:
 
 * **Serializer: **responsible for serializing the Sitecore template architecture and making it available to the _middleman_ for retrieval.
 * **Middleman: **responsible for retrieving the serialized architecture from the _serializer_ and passing it along to the _trigger_
