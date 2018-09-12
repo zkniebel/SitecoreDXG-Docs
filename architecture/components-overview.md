@@ -8,5 +8,5 @@ A _component_ is a modular program or service that is \(primarily\) independent 
 
 The following diagram depicts how these components communicate at a high-level:
 
-![](https://github.com/zkniebel/SitecoreDXG/raw/master/Documentation/assets/SitecoreDXG_Architecture__Components_Overview.png)
+![](/assets/SitecoreDXG_Architecture__Components_Overview.png)
 
