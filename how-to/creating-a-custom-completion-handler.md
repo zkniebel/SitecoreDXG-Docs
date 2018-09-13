@@ -45,11 +45,14 @@ const COMPLETIONHANDLER_ID = "helloWorld!";
 /**
  * Executes the completion handler with the given output directory path 
  * @param {string} outputDirectoryPath the path to the output directory
+ * @param {object} configurationLoader the configuration loader module
  * @param {object} logger the logger
  * @param {Array<*>} params array of custom parameters
  */
-var _execute = function (outputDirectoryPath, logger, params) {
+var _execute = function (outputDirectoryPath, configurationLoader, logger, params) {
   logger.info(`hello World! Output path is: "${outputDirectoryPath}"`);
+
+  // your logic here
 };
 
 /**
@@ -72,7 +75,7 @@ Strictly speaking, the `COMPLETIONHANDLER_ID` property does not actually need to
 
 In order to add a custom completion handler to the SitecoreDXG Generation Service, you need to perform the following steps:
 
-1. Navigate to the `[SitecoreDXG-Installation-Root]/completion\_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion\_handlers` folder, e.g. `./completion\_handlers/Custom`, for better organization. 
+1. Navigate to the `[SitecoreDXG-Installation-Root]/completion_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `./completion_handlers` folder, e.g. `./completion_handlers/Custom`, for better organization. 
 2. \(Optional\) **If your custom completion handler uses third-party modules** then it is recommended that you create a _package.json_ file for it either manually or by calling `npm init` and then add the third-party modules to the package's dependencies. This will help keep your custom completion handler more self-contained and modular, while avoiding the need to make changes to the SitecoreDXG Generation Service's native _package.json_
 3. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Installation-Root]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
 4. **If your completion handler uses third-party modules and has its own **_**package.json**_** file **then be sure to run `npm install` in either the SitecoreDXG Generation Service root or in the completion handler's root to install the dependencies
@@ -86,6 +89,7 @@ The following are some ideas for completion handlers that could be written for m
 * **POST-Upload Output Handler:** uploads the output via POST request to a specified REST endpoint
 * **Azure Blob Deploy Handler:** upload the output to Azure Blob Storage at a specific location from where it can be served to users \(directly or through a CDN\)
 * **RabbitMQ Return Handler:** send the output back to the middleman or to another location by adding it to a result queue via RabbitMQ
+* **Cleanup Handler:** delete old files after completing the generation
 
 **And more!** The point is that completion handlers are low-effort to implement and can serve any purpose that you need.
 
