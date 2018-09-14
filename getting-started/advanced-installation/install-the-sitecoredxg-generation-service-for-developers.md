@@ -6,11 +6,9 @@ The first step in installing SitecoreDXG is installing the Generation Service on
 
 The installation instructions for the SitecoreDXG Generation Service assume that you have [node.js](https://nodejs.org/en/) and [npm](https://www.npmjs.com/) installed on the target machine prior to beginning the installation.
 
-### Step 1a: Install the [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows) dependencies
+### Step 1a: \(Optional\) Install the [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows) dependencies
 
-SitecoreDXG is dependent on [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows). To install SitecoreDXG, you must first have the dependencies for _node-canvas_ installed, which cannot be installed through a simple`npm install`. In the below, I have outlined the steps that you must take to install first the dependencies and then SitecoreDXG itself.
-
-The easiest way to install the node-canvas dependencies is as follows:
+Installing the dependencies for the SitecoreDXG Generation Service is optional, as they are included in the installation package. Howevere, if you are going to be making changes to the SitecoreDXG Generation Service and customizing anything related to the way that it renders objects then it is recommended that you install [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows) yourself. This will also become necessary if you delete your `./app/node_modules` folder. Unfortunatly, the _node-canvas_ dependencies cannot be installed through a simple`npm install`. Instead, the easiest way to install the node-canvas dependencies is as follows:
 
 1. Install node.js \(verified with 6.11.4+\)
 2. Install chocolatey \(verified with 0.10.8+\)
