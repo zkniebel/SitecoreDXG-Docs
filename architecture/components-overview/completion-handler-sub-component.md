@@ -1,6 +1,10 @@
 # Completion Handler Sub-component
 
-SitecoreDXG ships with an example _completion handler_, helloWorld.js, to help those looking to create handlers for themselves. Because completion handler logic is generally specific to the requirements of the end-user's CD/CD architecture, no handlers are configured to be called by default for SitecoreDXG, out of the box. SitecoreDXG does include completion handlers for deploying to an AWS S3 bucket or an Azure Blob Storage container \(and others will be added in the future\), though using the completion handler is entirely optional.
+SitecoreDXG is meant to integrate easily with any CI/CD or end-user setup, which means that SitecoreDXG needs to support post-generation actions that should be run if the generation was successful. This is where _completion handlers_ come in. _Completion handlers_ run after a successful build and can be used to run any custom logic on the output that you want. They are designed to be the most easily extensible and replaceable entity in the SitecoreDXG ecosystem, so that you can make SitecoreDXG work for any use-case. 
+
+SitecoreDXG ships with two working _completion handlers_, [AWS S3 Deploy](/getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md) and [Azure Blob Storage Deploy](/getting-started/using-sitecoredxg/using-the-provided-azure-blob-storage-deploy-completion-handler.md), that are ready for immediate use, as well as an example _completion handler_, [helloWorld.js](/how-to/creating-a-custom-completion-handler.md), to help those looking to create handlers for themselves.
+
+Because completion handler logic is generally specific to the requirements of the end-user's CD/CD architecture, no handlers are configured to be called by default for SitecoreDXG, out of the box. In other words, while SitecoreDXG does include completion handlers for deploying to an AWS S3 bucket or an Azure Blob Storage container out of the box, using one or more completion handlers is entirely optional.
 
 See [Creating a Custom Completion Handler](/how-to/creating-a-custom-completion-handler.md) for more details on the example and how to write your own completion handlers.
 
