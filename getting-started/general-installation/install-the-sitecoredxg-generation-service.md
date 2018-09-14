@@ -40,12 +40,12 @@ If you installed your dependencies with chocolatey and/or used the standalone VS
 Once you have installed all of the [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows) dependencies in _Step 1a_, follow the instructions below to install the SitecoreDXG Generation Service on your machine:
 
 1. Download the SitecoreDXG installation zip to your machine and extract in a location of your choosing. Note that it does not matter where you unzip and store the SitecoreDXG folder
-2. Run`npm install`in the extracted installation folder.
+2. In the extracted installation folder, `cd ./app` and run`npm install`.
    * If you see any Node-Canvas, Cairo, GTK, C++, MSBuild, or file path issues then refer back to the instructions for installing the dependencies in _Step 1a_
    * If the issue persists, attempt to run `npm install node-canvas --global`. If the command is successful, attempt to run `npm install`in the folder again. Otherwise, or if the `npm install`fails with a new error then refer back to the _Step 1a _\(dependency installation\).
    * If the issue continues, reach out to me over Sitecore Community Slack \(@zachary\_kniebel\) for further assistance.
 3. \(Optional\) Open the _settings.js_ file and confirm or update the settings \(documented inline\) as needed
-4. Install the SitecoreDXG Generation Service as a Windows Service by running the following command as an administrator in the installation folder: `npm run-script install-windows-service`.
+4. Install the SitecoreDXG Generation Service as a Windows Service by running the following command as an administrator in the installation's `app` folder: `npm run-script install-windows-service`.
    * Note that you can skip this step if you want to start the SitecoreDXG Generation Service manually from the command-line instead
    * Note that to uninstall the SitecoreDXG Generation Service, you can use the command `npm run-script uninstall-windows-service`
 5. Go to the Services manager and ensure that the SitecoreDXG Generation Service is started
