@@ -44,7 +44,7 @@ SitecoreDXG includes the AWS S3 Deploy Completion Handler for deploying the gene
           ]
       }
       ```
-2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file with required settings for calling the completion handler
+2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file of the SitecoreDXG Generation Service with required settings for calling the completion handler
 3. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
 #### WARNING: You should always deploy to an empty directory

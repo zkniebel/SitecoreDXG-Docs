@@ -1,8 +1,6 @@
 # Using the Default RabbitMQ Middleman and Trigger {#using-the-default-rabbitmq-middleman-and-trigger}
 
-The RabbitMQ Middleman can be found in the`.\middlemen\RabbitMQ\`folder. Feel free to call the middleman directly from that folder or to copy that folder to another path or even another machine. If you do choose to move the file to another path or machine, be sure to run`npm install`to install the dependencies before your first use.
-
-The RabbitMQ Middleman should be called using the following command-line syntax:
+The RabbitMQ Middleman can be called from any location using the following command-line syntax:
 
 ```
 node rabbitmq-amqp-middleman CONNECTION_STRING ARCHITECURE_GET_URL GENERATION_QUEUE_NAME [COMPLETION_HANDLER_DATA]
@@ -43,6 +41,6 @@ _To retrieve the architecture and add the result to the documentation queue for 
 node rabbitmq-amqp-middleman amqp://localhost http://local.habitat.com/sitecoreuml/sitecoredxg/GetTemplateArchitecture "generation_queue__documentation" '[{\"ID\":\"MyHandler1\",\"Params\":[1,2,\"foo\",\"bar\"]},{\"ID\":\"MyHandler2\"}]'
 ```
 
-[          
+[            
 ](https://zkniebel.gitbooks.io/sitecoredxg/content/architecture/architecture-overview.html)
 
