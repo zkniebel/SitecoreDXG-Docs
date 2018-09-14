@@ -31,8 +31,8 @@
 * [Roles](architecture/roles.md)
   * [Role Combinations](architecture/role-combinations.md)
 * [Components](architecture/components-overview.md)
-  * [Trigger Sub-component](architecture/components-overview/trigger-sub-component.md)
-  * [Completion Handler Sub-component](architecture/components-overview/completion-handler-sub-component.md)
+  * [Trigger Plugins](architecture/components-overview/trigger-sub-component.md)
+  * [Completion Handler Plugins](architecture/components-overview/completion-handler-sub-component.md)
 * [Understanding the Default RabbitMQ Middleman and Trigger](architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## How To
