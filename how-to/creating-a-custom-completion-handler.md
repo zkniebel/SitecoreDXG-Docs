@@ -52,7 +52,7 @@ const COMPLETIONHANDLER_ID = "helloWorld!";
 var _execute = function (outputDirectoryPath, configurationLoader, logger, params) {
   logger.info(`hello World! Output path is: "${outputDirectoryPath}"`);
 
-  // your logic here
+  // your logic here 
 };
 
 /**
