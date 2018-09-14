@@ -1,4 +1,4 @@
-# Step 5: \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location
+# Step 5: \(Optional\) Install the Default RabbitMQ Middleman for Developers
 
 When installing SitecoreDXG you can choose to install the default RabbitMQ Middleman that is included with the product. If you choose to install the default RabbitMQ Middleman, keep in mind that _**the middleman does not have to be installed on the same machine as the RabbitMQ server, the SitecoreDXG Generation Service or the Sitecore instance. However, it may need to be on the same machine as your CI/CD server, depending on your use-case.**_
 
@@ -12,9 +12,9 @@ For more details on how the middleman chould be installed in a custom location a
 
 ## Installing the Default RabbitMQ Middleman
 
-Download the [`SitecoreDXG-Middleman-RabbitMQ-<version>.<build>.zip`](/getting-started/downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it, and that the resulting directory will be your installation directory for the RabbitMQ Middleman
-
-
+1. Download the [`SitecoreDXG-Dev-<version>.<build>.zip`](/getting-started/downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it.
+2. In the extracted directory, navigate to `./middlemen` and take note of the `./RabbitMQ` folder. This folder is your middleman's installation directory.
+3. Copy the middleman's installation directory to the location of your choosing. 
 
 
 
