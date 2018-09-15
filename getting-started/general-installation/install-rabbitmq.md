@@ -14,5 +14,7 @@ Additionally, make sure that if you install RabbitMQ on a server that is reachab
 
 Once you have finished configuring RabbitMQ you should have a working connection string, e.g.`"amqp://localhost"`. Be sure that you call the middleman with this connection string.
 
-Add a heartbeat parameter to the connection string to help keep the connection alive, e.g.`"amqp://localhost?heartbeat=60"`, and update your SitecoreDXG Generation Server's settings with the updated connection string value. Note that you do not need to call the Middleman with the heartbeat parameter.
+Next, add a heartbeat parameter to the connection string, e.g.`"amqp://localhost?heartbeat=60"`, and update your SitecoreDXG Generation Server's `./settings.js` file with the updated connection string value. The heartbeat parameter will help to keep the connection alive. Note that you do not need to call the Middleman with the heartbeat parameter.
+
+Finally, after updating the settings, be sure to go into your Services manager \(type `services.msc` into the Windows _Start Menu_\), find the SitecoreDXG Generation Service in the list and restart it.
 
