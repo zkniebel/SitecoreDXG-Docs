@@ -8,7 +8,7 @@ A _role_ is a responsibility to satisfy a particular piece of logic and/or task 
 * **Generator: **responsible for performing the generation process on the serialized architecture when called by the _trigger_
 * **Completion Handler: **an optional role responsible for performing post-generation logic on the generated output when called by the _generator_ after it finishes generating
 
-The following diagram shows the general communication workflow between these roles. Note that this workflow may change slightly depending on how you choose to use SitecoreDXG and implement your Middleman and Trigger.
+The following diagram shows the general communication workflow between these roles. Note that this workflow may change slightly depending on how you choose to use SitecoreDXG and implement your Middleman and Trigger. 
 
 ![](/assets/SitecoreDXG_Architecture_v3.png)
 

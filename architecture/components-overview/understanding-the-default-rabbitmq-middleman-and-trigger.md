@@ -8,7 +8,7 @@ The included middleman and trigger use RabbitMQ to queue architectures for gener
    are supported for generating HTML documentation and a metadata-json file, respectively, but the names of the queues are customizeable via the SitecoreDXG Generation Service's settings.
 2. The RabbitMQ trigger, which has a listener for each of the supported queues, detects that a new message was added and calls the appropriate generation logic of the SitecoreDXG Generation Service for the queue on the passed in architecture.
 
-The following diagram shows the full workflow that describes the default SitecoreDXG ecosystem using RabbitMQ for indirect communication between the Middleman and Trigger:
+The following diagram shows the full workflow that describes the default SitecoreDXG ecosystem using RabbitMQ for indirect communication between the Middleman and Trigger: 
 
 ![](/assets/SitecoreDXG_Roles_RabbitMQ_Workflow.png)
 

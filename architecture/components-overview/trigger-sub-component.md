@@ -6,7 +6,7 @@ By default, SitecoreDXG ships with the **SitecoreDXG RabbitMQ Trigger** which is
 
 It should also be noted that SitecoreDXG includes an alternative trigger, the Expressjs Service Trigger, that can be optionally used as a replacement for the RabbitMQ Trigger. The ExpressJs trigger is more intended to serve a high-level example than a fully-functional trigger - a limited set of features are supported and the service itself has not been optimize to receive the potentially large JSON payloads that would be submitted when generating the documentation for larger, more complex solutions.
 
-The following diagram shows the involvement of a trigger plugin and the SitecoreUML Service for Sitecore in the high-level communication between the main components of fully-functional SitecoreDXG ecosystem:
+The following diagram shows the involvement of a trigger plugin and the SitecoreUML Service for Sitecore in the high-level communication between the main components of fully-functional SitecoreDXG ecosystem: 
 
 ![](/assets/SitecoreDXG_Components_TriggerSerializerCommunication.png)
 
