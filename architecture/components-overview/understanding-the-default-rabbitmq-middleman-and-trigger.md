@@ -10,5 +10,5 @@ The included middleman and trigger use RabbitMQ to queue architectures for gener
 
 The following diagram shows the full workflow that describes the default SitecoreDXG ecosystem using RabbitMQ for indirect communication between the Middleman and Trigger:
 
-![](/assets/SitecoreDXG_Architecture__Indirect_Communication_Workflow__Roles.png)
+![](/assets/SitecoreDXG_Roles_RabbitMQ_Workflow.png)
 
