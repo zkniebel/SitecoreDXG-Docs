@@ -7,6 +7,7 @@
 
 ## Getting Started
 
+* [Compatibility and System Requirements](getting-started/compatibility-and-system-requirements.md)
 * [Installing SitecoreDXG](getting-started/installing-sitecoredxg.md)
   * [General Installation](getting-started/general-installation.md)
     * [1. Install the SitecoreDXG Generation Service](getting-started/general-installation/install-the-sitecoredxg-generation-service.md)
