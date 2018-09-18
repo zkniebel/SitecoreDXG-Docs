@@ -56,6 +56,8 @@ In addition to the minimum specifications required by [RabbitMQ](https://www.rab
 
 
 
+---
+
 [^1]: Generation will be faster with a faster processor, but at present SitecoreDXG is only set up to use a single CPU core. Improvements are currently underway to change this.
 
 [^2]: The generation service will use as much RAM as is available during generation, so the more RAM you have the faster the generation will be
