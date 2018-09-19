@@ -31,11 +31,13 @@
 ## Architecture
 
 * [Architecture Overview](architecture/architecture-overview.md)
-* [Components](architecture/components-overview/README.md)
-  * [Trigger Plugins](architecture/components-overview/trigger-sub-component.md)
-  * [Completion Handler Plugins](architecture/components-overview/completion-handler-sub-component.md)
 * [Roles](architecture/roles/README.md)
   * [Role Combinations](architecture/roles/role-combinations.md)
+* [Components](architecture/components-overview.md)
+* [Plugins](architecture/plugins/README.md)
+  * [Trigger Plugins](architecture/plugins/trigger-sub-component.md)
+  * [Completion Handler Plugins](architecture/plugins/completion-handler-sub-component.md)
+* [Middlemen](architecture/middlemen.md)
 * [Understanding the Default RabbitMQ Middleman and Trigger](architecture/understanding-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## How To
