@@ -1,10 +1,10 @@
 # Table of contents
 
-* [Introduction](README.md)
+* [SitecoreDXG: The Documentation Experience Generator](README.md)
 
 ## Overview
 
-* [SitecoreDXG: The Documentation Experience Generator](overview/readme.md)
+* [SitecoreDXG: The Documentation Experience Generator](overview/overview.md)
 * [Comparison with SitecoreUML](overview/comparison-with-sitecoreuml.md)
 
 ## Getting Started
