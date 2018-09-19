@@ -4,7 +4,7 @@ SitecoreDXG comes from the SitecoreUML family, leverages many of the same backin
 
 * SitecoreDXG can be called directly from CI/CD pipelines
 * SitecoreDXG does not require users to install and learn a new IDE/program in order to use it
-* SitecoreDXG does not suffer from run-time rendering performance penalties during template import and diagram generation, and is thus **significantly **faster \(similar to the benefits of using the VirtualDOM provided by React.js\)
+* SitecoreDXG does not suffer from run-time rendering performance penalties during template import and diagram generation, and is thus **significantly** faster \(similar to the benefits of using the VirtualDOM provided by React.js\)
 
 It should be noted that while SitecoreUML supports the ability to create a new architecture from scratch and deploy it to Sitecore, SitecoreDXG does not currently support this functionality. Some of the other features of SitecoreUML that SitecoreDXG does not have direct support for include the ability to customize/update the documentation manually after import and a select few others. However, it is important to note that when SitecoreDXG generates documentation it also generates a MDJ project file that can be opened and edited in StarUML with the SitecoreUML tools. SitecoreUML is also capable of regenerating the documentation after these updates have been made. Additionally, SitecoreDXG can also be requested to just generate the MDJ project file and not to generate the documentation, which significantly reduces generation time in situations where customizations to the documentation are expected.
 

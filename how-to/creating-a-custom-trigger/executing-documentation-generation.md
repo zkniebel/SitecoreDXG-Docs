@@ -4,7 +4,7 @@ In order to generate documentation, you need to call the `generateDocumentation`
 
 The function has the following syntax:
 
-```
+```text
 generation.generateDocumentation(
   Object data,        // the parsed JSON data response received from the serializer
   Fn successCallback, // callback to be executed on successful generation
@@ -14,7 +14,7 @@ generation.generateDocumentation(
 
 Following this syntax, the below can be used to execute documentation generation:
 
-```js
+```javascript
 generation.generateDocumentation(
   data,
   function (targetArchiveFilePath, targetArchiveFileName, targetFolderPath, targetHtmlDocFolderPath, targetMdjFilePath) {
@@ -25,6 +25,4 @@ generation.generateDocumentation(
   }
 );
 ```
-
-
 

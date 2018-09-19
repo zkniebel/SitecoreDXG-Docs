@@ -2,7 +2,7 @@
 
 When it comes to creating a custom middleman, the sky is the limit as far as options for how to implement your middleman are concerned. Unlike custom triggers and completion handlers, there is very little structure that defines how your middleman must be implemented. More specifically, custom triggers and completion handlers must be written as node modules and must implement and export specific functions in order to work correctly, whereas a custom middleman can be written in any coding language that enables you to communicate with your _serializer_ and your _trigger_. Assuming that you are not replacing the SitecoreUML Service for Sitecore component \(which satisfies the _serializer_ role\), this means that so long as your language can communicate with the trigger and can make an HTTP GET to the SitecoreUML Service then your middleman should work.
 
-If you decide to create a custom middleman, it is more than likely that you will want to create a custom trigger, as well. For example, you may want to make a middleman that performs all communication with SitecoreDXG through web requests. In this case, you may choose to create a new trigger that exposes an ExpressJS service \(or you could build off of the example ExpressJs that is included with SitecoreDXG\), and write your custom middleman as a PowerShell script, or as part of an application written in C\#, Java, Bash, C++, PHP, C, Lisp, ... and so on. 
+If you decide to create a custom middleman, it is more than likely that you will want to create a custom trigger, as well. For example, you may want to make a middleman that performs all communication with SitecoreDXG through web requests. In this case, you may choose to create a new trigger that exposes an ExpressJS service \(or you could build off of the example ExpressJs that is included with SitecoreDXG\), and write your custom middleman as a PowerShell script, or as part of an application written in C\#, Java, Bash, C++, PHP, C, Lisp, ... and so on.
 
 ## Requirements of a Middleman
 
@@ -17,7 +17,7 @@ In addition to the above, the native RabbitMQ middleman also includes support fo
 
 The below example shows the default RabbitMQ Middleman that is included with SitecoreDXG. Feel free to use this as a starting point when writing your own handlers.
 
-```js
+```javascript
 #!/usr/local/env node
 
 /*
@@ -33,7 +33,7 @@ The below example shows the default RabbitMQ Middleman that is included with Sit
  * Kniebel (contact@zacharykniebel.com).
  *
  */
- 
+
 /* DEPENDENCIES */
 
 // third-party
@@ -87,7 +87,7 @@ amqp.connect(connectionString, function(err, conn) {
                 return console.error(err); 
                 _exitProgram(process, 1, conn);
             }
-            
+
             var json = JSON.parse(data);
             if (!json.Success) {
                 console.error("An error occurred while retrieving the architecture data. Program terminating...", json);
@@ -108,13 +108,5 @@ amqp.connect(connectionString, function(err, conn) {
         });
     });
 });
-
-
 ```
-
-
-
-
-
-
 

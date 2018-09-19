@@ -6,7 +6,7 @@ In order to generate just the Meta-Data JSON file, you need to call the `generat
 
 The function has the following syntax:
 
-```
+```text
 generation.generateMetaDataJson(
   Object data,        // the parsed JSON data response received from the serializer
   Fn successCallback, // callback to be executed on successful generation
@@ -16,7 +16,7 @@ generation.generateMetaDataJson(
 
 Following this syntax, the below can be used to execute the Meta-Data JSON file generation:
 
-```js
+```javascript
 generation.generateMetaDataJson(
   data,
   function function (mdjPath, targetFileName, targetFolderPath, targetFilePath) {
@@ -27,6 +27,4 @@ generation.generateMetaDataJson(
   }
 );
 ```
-
-
 

@@ -8,7 +8,7 @@ It should be noted that [Static Website Hosting](https://azure.microsoft.com/en-
 
 ## Setup
 
-1. Go to the [Azure portal](https://portal.azure.com) and create and/or retrieve the details for the Azure Blob Storage account and container that you want to use. _You will need the connection string for your ABS account, the name of the container that you want to deploy to \(must exist, and should be _`$web`_ as it is created automatically when enabling your storage account for Static Hosting\) and \(optionally\) the name of the directory within that container that you want to deploy to_
+1. Go to the [Azure portal](https://portal.azure.com) and create and/or retrieve the details for the Azure Blob Storage account and container that you want to use. _You will need the connection string for your ABS account, the name of the container that you want to deploy to \(must exist, and should be_ `$web` _as it is created automatically when enabling your storage account for Static Hosting\) and \(optionally\) the name of the directory within that container that you want to deploy to_
    1. See the [Getting Started](https://azure.microsoft.com/en-us/blog/azure-storage-static-web-hosting-public-preview/) instructions provided by Azure for more information
    2. **IMPORTANT:** make sure that you select "General Purpose v2" \(GPv2\) for your storage account type, as this cannot be changed later and currently only GPv2 supports static website hosting
 2. \(Optional\) if you wish to set the completion handler as the default then update the `DefaultCompletionHandlers` property in the `./settings.js` file of the SitecoreDXG Generation Service with required settings for calling the completion handler
@@ -22,7 +22,7 @@ The ABS Deploy Completion Handler is designed to perform clean deployments, mean
 
 The Azure Blob Storage Deploy Completion Handler **requires a single parameter** that holds a JSON object with the following syntax:
 
-```js
+```javascript
 {
     "AzureStorageAccountConnectionString": "YOUR_ABS_CONNECTION_STRING",
     "AzureStorageContainer": "$web",
@@ -32,7 +32,7 @@ The Azure Blob Storage Deploy Completion Handler **requires a single parameter**
 
 In order to pass this object to the handler, it should be passed in as the first element of the `Params` array of the completion handler data. The following illustrates the completion handler data object for the Azure Blob Storage Deploy Completion Handler within the completion handler data array:
 
-```js
+```javascript
 [{
     "ID": "Azure_ABS",
     "Params": [{
@@ -51,15 +51,15 @@ Azure Blob Storage doesn't have a real concept of "folders", but it can be made 
 
 _This section describes how you can call the Azure Blob Storage Deploy Handler from the default RabbitMQ Middleman as well the provided TeamCity Meta-Runner._
 
-1. Complete the steps described in the [Setup](#setup) section, above, on your SitecoreDXG Generation Server
-2. Create your completion handler data object for the Azure Blob Storage Deploy Handler, as described above in the [Parameters](#parameters) section
+1. Complete the steps described in the [Setup](using-the-provided-azure-blob-storage-deploy-completion-handler.md#setup) section, above, on your SitecoreDXG Generation Server
+2. Create your completion handler data object for the Azure Blob Storage Deploy Handler, as described above in the [Parameters](using-the-provided-azure-blob-storage-deploy-completion-handler.md#parameters) section
 3. Stringify your completion handler data array into the following syntax:
-   ```js
+
+   ```javascript
    '[{\"ID\":\"Azure_ABS\",\"Params\":[{\"AzureStorageAccountConnectionString\":\"DefaultEndpointsProtocol=https;AccountName=sitecoredxg;AccountKey=MY_ACCOUNT_KEY;EndpointSuffix=core.windows.net\",\"AzureStorageContainer\":\"$web\",\"AzureStorageTargetDirectory\":\"MySite/UAT\"}]}]'
    ```
+
 4. Pass the stringified completion handler data array to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
-   1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](/getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
-   2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](/how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
-
-
+   1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
+   2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
 

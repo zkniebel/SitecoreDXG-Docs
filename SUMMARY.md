@@ -1,27 +1,29 @@
-# Summary
+# Table of contents
+
+* [Introduction](README.md)
 
 ## Overview
 
-* [Introduction](README.md)
-* [Comparison with SitecoreUML](comparison-with-sitecoreuml.md)
+* [SitecoreDXG: The Documentation Experience Generator](overview/readme.md)
+* [Comparison with SitecoreUML](overview/comparison-with-sitecoreuml.md)
 
 ## Getting Started
 
 * [Compatibility and System Requirements](getting-started/compatibility-and-system-requirements.md)
-* [Installing SitecoreDXG](getting-started/installing-sitecoredxg.md)
-  * [General Installation](getting-started/general-installation.md)
-    * [1. Install the SitecoreDXG Generation Service](getting-started/general-installation/install-the-sitecoredxg-generation-service.md)
-    * [2. Install RabbitMQ](getting-started/general-installation/install-rabbitmq.md)
-    * [3. Install the SitecoreUML Service for Sitecore](getting-started/general-installation/install-the-sitecoreuml-service-for-sitecore.md)
-    * [4. \(Optional\) Configure the Documentation Configuration Item for your Solution](getting-started/general-installation/optional-configure-the-documentation-configuration-item-for-your-solution.md)
-    * [5. \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](getting-started/general-installation/optional-install-the-default-rabbitmq-middleman.md)
-  * [Developer Installation](getting-started/advanced-installation.md)
-    * [1. Install the SitecoreDXG Generation Service for Developers](getting-started/advanced-installation/install-the-sitecoredxg-generation-service-for-developers.md)
-    * [2. Install RabbitMQ for Developers](getting-started/advanced-installation/install-rabbitmq-for-developers.md)
-    * [3. Install the SitecoreUML Service for Sitecore for Developers](getting-started/advanced-installation/install-the-sitecoreuml-service-for-sitecore-for-developers.md)
-    * [4. \(Optional\) Install the Default RabbitMQ Middleman for Developers](getting-started/advanced-installation/optional-install-the-default-rabbitmq-middleman-for-developers.md)
-  * [Downloads](getting-started/downloads.md)
-* [Using SitecoreDXG](getting-started/using-sitecoredxg.md)
+* [Installing SitecoreDXG](getting-started/installing-sitecoredxg/README.md)
+  * [General Installation](getting-started/installing-sitecoredxg/general-installation/README.md)
+    * [1. Install the SitecoreDXG Generation Service](getting-started/installing-sitecoredxg/general-installation/install-the-sitecoredxg-generation-service.md)
+    * [2. Install RabbitMQ](getting-started/installing-sitecoredxg/general-installation/install-rabbitmq.md)
+    * [3. Install the SitecoreUML Service for Sitecore](getting-started/installing-sitecoredxg/general-installation/install-the-sitecoreuml-service-for-sitecore.md)
+    * [4. \(Optional\) Configure the Documentation Configuration Item for your Solution](getting-started/installing-sitecoredxg/general-installation/optional-configure-the-documentation-configuration-item-for-your-solution.md)
+    * [5. \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](getting-started/installing-sitecoredxg/general-installation/optional-install-the-default-rabbitmq-middleman.md)
+  * [Developer Installation](getting-started/installing-sitecoredxg/advanced-installation/README.md)
+    * [1. Install the SitecoreDXG Generation Service for Developers](getting-started/installing-sitecoredxg/advanced-installation/install-the-sitecoredxg-generation-service-for-developers.md)
+    * [2. Install RabbitMQ for Developers](getting-started/installing-sitecoredxg/advanced-installation/install-rabbitmq-for-developers.md)
+    * [3. Install the SitecoreUML Service for Sitecore for Developers](getting-started/installing-sitecoredxg/advanced-installation/install-the-sitecoreuml-service-for-sitecore-for-developers.md)
+    * [4. \(Optional\) Install the Default RabbitMQ Middleman for Developers](getting-started/installing-sitecoredxg/advanced-installation/optional-install-the-default-rabbitmq-middleman-for-developers.md)
+  * [Downloads](getting-started/installing-sitecoredxg/downloads.md)
+* [Using SitecoreDXG](getting-started/using-sitecoredxg/README.md)
   * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md)
   * [Using the Provided AWS S3 Deploy Completion Handler](getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md)
   * [Using the Provided Azure Blob Storage Deploy Completion Handler](getting-started/using-sitecoredxg/using-the-provided-azure-blob-storage-deploy-completion-handler.md)
@@ -29,19 +31,19 @@
 ## Architecture
 
 * [Architecture Overview](architecture/architecture-overview.md)
-* [Components](architecture/components-overview.md)
+* [Components](architecture/components-overview/README.md)
   * [Trigger Plugins](architecture/components-overview/trigger-sub-component.md)
   * [Completion Handler Plugins](architecture/components-overview/completion-handler-sub-component.md)
-* [Roles](architecture/roles.md)
-  * [Role Combinations](architecture/role-combinations.md)
-* [Understanding the Default RabbitMQ Middleman and Trigger](architecture/components-overview/understanding-the-default-rabbitmq-middleman-and-trigger.md)
+* [Roles](architecture/roles/README.md)
+  * [Role Combinations](architecture/roles/role-combinations.md)
+* [Understanding the Default RabbitMQ Middleman and Trigger](architecture/understanding-the-default-rabbitmq-middleman-and-trigger.md)
 
 ## How To
 
-* [CI/CD Integration](how-to/cicd.md)
+* [CI/CD Integration](how-to/cicd/README.md)
   * [Integrating the Default RabbitMQ Middleman](how-to/cicd/integrating-the-default-rabbitmq-middleman.md)
   * [Integrating the Default TeamCity RabbitMQ Meta-Runner](how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md)
-* [Creating a Custom Trigger](how-to/creating-a-custom-trigger.md)
+* [Creating a Custom Trigger](how-to/creating-a-custom-trigger/README.md)
   * [Executing Documentation Generation](how-to/creating-a-custom-trigger/executing-documentation-generation.md)
   * [Executing Meta-Data JSON Generation](how-to/creating-a-custom-trigger/executing-meta-data-json-generation.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
@@ -49,13 +51,13 @@
 
 ## About the Generated Documentation
 
-* [Models](about-the-generated-documentation/models.md)
+* [Models](about-the-generated-documentation/models/README.md)
   * [Template Model](about-the-generated-documentation/models/template-model.md)
   * [Template Field Model](about-the-generated-documentation/models/template-field-model.md)
   * [Template Folder Model](about-the-generated-documentation/models/template-folder-model.md)
   * [Inheritance](about-the-generated-documentation/models/inheritance.md)
   * [Dependencies](about-the-generated-documentation/models/dependencies.md)
-* [Diagrams](about-the-generated-documentation/diagrams.md)
+* [Diagrams](about-the-generated-documentation/diagrams/README.md)
   * [SitecoreUML Syntax](about-the-generated-documentation/diagrams/sitecoreuml-syntax.md)
   * [Templates Diagram](about-the-generated-documentation/diagrams/templates-diagram.md)
   * [Template Folders Diagram](about-the-generated-documentation/diagrams/template-folders-diagram.md)

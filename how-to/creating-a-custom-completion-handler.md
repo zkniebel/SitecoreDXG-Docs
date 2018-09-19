@@ -1,6 +1,6 @@
 # Creating a Custom Completion Handler
 
-While SitecoreDXG generates documentation for you, what do you do with the documentation once generation has completed is entirely up to you. SitecoreDXG supports the execution of one or more completion handlers after successful generation, and ships with an example completion handler, _helloWorld_, and two practical completion handlers, the [_AWS S3 Deploy_](/getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md) and [_Azure Blob Storage Deploy_](/getting-started/using-sitecoredxg/using-the-provided-azure-blob-storage-deploy-completion-handler.md) completion handlers, to help you create handlers of your own.
+While SitecoreDXG generates documentation for you, what do you do with the documentation once generation has completed is entirely up to you. SitecoreDXG supports the execution of one or more completion handlers after successful generation, and ships with an example completion handler, _helloWorld_, and two practical completion handlers, the [_AWS S3 Deploy_](../getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md) and [_Azure Blob Storage Deploy_](../getting-started/using-sitecoredxg/using-the-provided-azure-blob-storage-deploy-completion-handler.md) completion handlers, to help you create handlers of your own.
 
 Completion Handlers can be self-contained modules, in that they can have their own _package.json_ files and their own local dependencies without having to modify the SitecoreDXG Generation Service's _package.json_ file in any way. If a _package.json_ file is detected for a completion handler, the completion handler module and its dependencies are automatically installed immediately before the SitecoreDXG Generation Service when calling `npm install` in the SitecoreDXG Generation Service installation folder.
 
@@ -8,7 +8,7 @@ It is expected that users will want to write their own and/or customize existing
 
 To create a custom completion handler, you will need to create a node module \(.JS file\) that looks similar to the below example:
 
-```js
+```javascript
 #!/usr/local/env node
 
 /*
@@ -78,14 +78,14 @@ In order to add a custom completion handler to the SitecoreDXG Generation Servic
 1. Navigate to the `[SitecoreDXG-Generation-Service-Installation-Directory]/plugins/completion_handlers` folder and copy in your custom completion handler file. SitecoreDXG will dynamically load all files in this folder as completion handlers. Note that it is recommended that you add your completion handler file into a sub-directory of the `completion_handlers` folder, e.g. `./completion_handlers/MyCompletionHander`, for better organization. 
 2. \(Optional\) **If your custom completion handler uses third-party modules** then it is recommended that you create a _package.json_ file for it either manually or by calling `npm init` and then add the third-party modules to the package's dependencies. This will help keep your custom completion handler more self-contained and modular, while avoiding the need to make changes to the SitecoreDXG Generation Service's native _package.json_
 3. \(Optional\) If you want your completion handler to run by default, then open the `[SitecoreDXG-Generation-Service-Installation-Directory]/settings.js` file and in the `configuration` object update the value of the `DefaultCompletionHandlers` property to the ID of your custom completion handler. This will tell SitecoreDXG that your custom completion handler should be registered and used after all successful generations unless a list of handlers to use is explicitly specified. 
-4. **If your completion handler uses third-party modules and has its own **_**package.json**_** file **then be sure to run `npm install` in either the SitecoreDXG Generation Service root or in the completion handler's root to install the dependencies
+4. **If your completion handler uses third-party modules and has its own** _**package.json**_ **file** then be sure to run `npm install` in either the SitecoreDXG Generation Service root or in the completion handler's root to install the dependencies
 5. **If you are running the SitecoreDXG Generation Service** as a Windows service then you need to restart the service
 
 ## Completion Handler Ideas
 
 The following are some ideas for completion handlers that could be written for more robust generation setups:
 
-* **Output Copy Handler: **copy the output from the output folder to a specific location on the SitecoreDXG Generation Service machine or a networked location
+* **Output Copy Handler:** copy the output from the output folder to a specific location on the SitecoreDXG Generation Service machine or a networked location
 * **POST-Upload Output Handler:** uploads the output via POST request to a specified REST endpoint
 * **Azure Blob Deploy Handler:** upload the output to Azure Blob Storage at a specific location from where it can be served to users \(directly or through a CDN\)
 * **RabbitMQ Return Handler:** send the output back to the middleman or to another location by adding it to a result queue via RabbitMQ
