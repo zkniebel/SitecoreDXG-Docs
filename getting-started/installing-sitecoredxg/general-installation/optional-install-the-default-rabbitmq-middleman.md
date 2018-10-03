@@ -12,5 +12,5 @@ For more details on how the middleman chould be installed in a custom location a
 
 ## Installing the Default RabbitMQ Middleman
 
-Download the [`SitecoreDXG-Middleman-RabbitMQ-<version>.<build>.zip`](../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it, and that the resulting directory will be your installation directory for the RabbitMQ Middleman
+Download the [`SitecoreDXG-Middleman-RabbitMQ-<version>.<build>.zip`](../../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it, and that the resulting directory will be your installation directory for the RabbitMQ Middleman
 

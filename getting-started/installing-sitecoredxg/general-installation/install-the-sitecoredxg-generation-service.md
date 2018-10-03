@@ -10,7 +10,7 @@ The installation instructions for the SitecoreDXG Generation Service assume that
 
 Once you have installed all of prerequisites installed, follow the instructions below to install the SitecoreDXG Generation Service on your machine:
 
-1. Download the [`SitecoreDXG-Generation-Service-<version>.<build>.zip`](../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it, and that the resulting directory will be your installation directory for the SitecoreDXG Generation Service.
+1. Download the [`SitecoreDXG-Generation-Service-<version>.<build>.zip`](../../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you store it, and that the resulting directory will be your installation directory for the SitecoreDXG Generation Service.
 2. \(Optional\) Open the `./settings.js` file and confirm or update the settings \(documented inline\) as needed
 3. Install the SitecoreDXG Generation Service as a Windows Service by running the following command as an administrator in the installation directory: `npm run-script install-windows-service`.
    * Note that you can skip this step if you want to start the SitecoreDXG Generation Service manually from the command-line/PowerShell instead

@@ -37,7 +37,7 @@ If you installed your dependencies with chocolatey and/or used the standalone VS
 
 Once you have installed all of the [_node-canvas_](https://github.com/Automattic/node-canvas/wiki/Installation%3A-Windows) dependencies in _Step 1a_, follow the instructions below to install the SitecoreDXG Generation Service on your machine:
 
-1. Download the [`SitecoreDXG-Dev-<version>.<build>.zip`](../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you unzip and store the SitecoreDXG folder, but the location you choose will be the parent of your installation directory. The actual installation directory will be the `./app` directory.
+1. Download the [`SitecoreDXG-Dev-<version>.<build>.zip`](../../downloads.md) to your machine and extract in a location of your choosing. Note that it does not matter where you unzip and store the SitecoreDXG folder, but the location you choose will be the parent of your installation directory. The actual installation directory will be the `./app` directory.
 2. In the extracted installation folder, `cd ./app` and run`npm install`.
    * If you see any Node-Canvas, Cairo, GTK, C++, MSBuild, or file path issues then refer back to the instructions for installing the dependencies in _Step 1a_
    * If the issue persists, attempt to run `npm install node-canvas --global`. If the command is successful, attempt to run `npm install`in the folder again. Otherwise, or if the `npm install`fails with a new error then refer back to the _Step 1a_ \(dependency installation\).
