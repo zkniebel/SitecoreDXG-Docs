@@ -1,4 +1,4 @@
-# Inheritance
+# Inheritance Relationship Model
 
 Coming soon...
 

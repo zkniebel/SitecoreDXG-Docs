@@ -1,4 +1,4 @@
-# Dependencies
+# Dependency Relationship Model
 
 Coming soon...
 

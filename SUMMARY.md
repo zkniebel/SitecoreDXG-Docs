@@ -54,12 +54,21 @@
 
 ## About the Generated Documentation
 
+* [Overview](about-the-generated-documentation/overview.md)
 * [Models](about-the-generated-documentation/models/README.md)
   * [Template Model](about-the-generated-documentation/models/template-model.md)
   * [Template Field Model](about-the-generated-documentation/models/template-field-model.md)
   * [Template Folder Model](about-the-generated-documentation/models/template-folder-model.md)
-  * [Inheritance](about-the-generated-documentation/models/inheritance.md)
-  * [Dependencies](about-the-generated-documentation/models/dependencies.md)
+  * [Parent-Child Relationships in Models](about-the-generated-documentation/models/parent-child-relationships-in-models.md)
+  * [Inheritance Relationship Model](about-the-generated-documentation/models/inheritance.md)
+  * [Dependency Relationship Model](about-the-generated-documentation/models/dependencies.md)
+* [Views](about-the-generated-documentation/views/README.md)
+  * [Template View](about-the-generated-documentation/views/template-view.md)
+  * [Template Field View](about-the-generated-documentation/views/template-field-view.md)
+  * [Template Folder View](about-the-generated-documentation/views/template-folder-view.md)
+  * [Parent-Child Relationship View](about-the-generated-documentation/views/parent-child-relationship-view.md)
+  * [Inheritance Relationship View](about-the-generated-documentation/views/inheritance-relationship-view.md)
+  * [Dependency View](about-the-generated-documentation/views/dependency-view.md)
 * [Diagrams](about-the-generated-documentation/diagrams/README.md)
   * [SitecoreUML Syntax](about-the-generated-documentation/diagrams/sitecoreuml-syntax.md)
   * [Templates Diagram](about-the-generated-documentation/diagrams/templates-diagram.md)
