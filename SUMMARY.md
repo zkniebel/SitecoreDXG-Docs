@@ -67,4 +67,5 @@
   * [Layer Diagrams](about-the-generated-documentation/diagrams/layer-diagrams.md)
   * [Module Diagrams](about-the-generated-documentation/diagrams/module-diagrams.md)
   * [Module Templates Diagrams](about-the-generated-documentation/diagrams/module-templates-diagrams.md)
+* [Samples](about-the-generated-documentation/samples.md)
 
