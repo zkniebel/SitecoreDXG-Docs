@@ -59,7 +59,7 @@
   * [Template Model](about-the-generated-documentation/models/template-model.md)
   * [Template Field Model](about-the-generated-documentation/models/template-field-model.md)
   * [Template Folder Model](about-the-generated-documentation/models/template-folder-model.md)
-  * [Parent-Child Relationships in Models](about-the-generated-documentation/models/parent-child-relationships-in-models.md)
+  * [Parent-Child Relationships of Models](about-the-generated-documentation/models/parent-child-relationships-in-models.md)
   * [Inheritance Relationship Model](about-the-generated-documentation/models/inheritance.md)
   * [Dependency Relationship Model](about-the-generated-documentation/models/dependencies.md)
 * [Views](about-the-generated-documentation/views/README.md)
