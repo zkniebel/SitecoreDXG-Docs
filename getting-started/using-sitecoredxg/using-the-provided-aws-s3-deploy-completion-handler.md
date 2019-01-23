@@ -56,7 +56,7 @@ The AWS S3 Deploy Completion Handler is designed to perform clean deployments, m
 
 ## Parameters
 
-The AWS S3 Deploy Completion Handler **requires a single parameter** that holds a JSON object with the following syntax:
+The AWS S3 Deploy Completion Handler requires a JSON object parameter with the following syntax:
 
 ```javascript
 {
@@ -67,17 +67,17 @@ The AWS S3 Deploy Completion Handler **requires a single parameter** that holds 
 }
 ```
 
-In order to pass this object to the handler, it should be passed in as the first element of the `Params` array of the completion handler data. The following illustrates the completion handler data object for the AWS S3 Deploy Completion Handler within the completion handler data array:
+In order to pass this object to the handler, it should be passed in as the `Params` object of the completion handler data. The following illustrates the completion handler data object for the AWS S3 Deploy Completion Handler within the completion handler data array:
 
 ```javascript
 [{
     "ID": "AWS_S3",
-    "Params": [{
+    "Params": {
         "AccessKeyId": "YOUR_AWS_ACCESS_KEY_ID",
         "SecretAccessKey": "YOUR_AWS_SECRET_ACCESS_KEY",
         "S3BucketName": "MyS3Bucket",
         "S3FolderPath": "MySite/UAT"
-    }]
+    }
 }]
 ```
 
@@ -91,13 +91,13 @@ _This section describes how you can call the S3 Deploy Handler from the default 
 
 1. Complete the steps described in the [Setup](using-the-provided-aws-s3-deploy-completion-handler.md#setup) section, above, on your SitecoreDXG Generation Server
 2. Create your completion handler data object for the S3 Deploy Handler, as described above in the [Parameters](using-the-provided-aws-s3-deploy-completion-handler.md#parameters) section
-3. Stringify your completion handler data array into the following syntax:
+3. Stringify your completion handler data into the options parameter, as follows:
 
    ```javascript
-   '[{\"ID\":\"AWS_S3\",\"Params\":[{\"AccessKeyId\":\"YOUR_AWS_ACCESS_KEY_ID\",\"SecretAccessKey\":\"YOUR_AWS_SECRET_ACCESS_KEY",\"S3BucketName\":\"MyS3Bucket\",\"S3FolderPath\":\"MySite/UAT\"}]}]'
+   '{\"CompletionHandlers\":[{\"ID\":\"AWS_S3\",\"Params\":{\"AccessKeyId\":\"YOUR_AWS_ACCESS_KEY_ID\",\"SecretAccessKey\":\"YOUR_AWS_SECRET_ACCESS_KEY",\"S3BucketName\":\"MyS3Bucket\",\"S3FolderPath\":\"MySite/UAT\"}}]}'
    ```
 
-4. Pass the stringified completion handler data array to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
+4. Pass the stringified object to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
    1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
    2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
 

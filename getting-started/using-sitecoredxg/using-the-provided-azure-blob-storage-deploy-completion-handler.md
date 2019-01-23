@@ -20,7 +20,7 @@ The ABS Deploy Completion Handler is designed to perform clean deployments, mean
 
 ## Parameters
 
-The Azure Blob Storage Deploy Completion Handler **requires a single parameter** that holds a JSON object with the following syntax:
+The Azure Blob Storage Deploy Completion Handler requires a JSON object parameter with the following syntax:
 
 ```javascript
 {
@@ -30,16 +30,16 @@ The Azure Blob Storage Deploy Completion Handler **requires a single parameter**
 }
 ```
 
-In order to pass this object to the handler, it should be passed in as the first element of the `Params` array of the completion handler data. The following illustrates the completion handler data object for the Azure Blob Storage Deploy Completion Handler within the completion handler data array:
+In order to pass this object to the handler, it should be passed in as the `Params` object of the completion handler data. The following illustrates the completion handler data object for the Azure Blob Storage Deploy Completion Handler within the completion handler data array:
 
 ```javascript
 [{
     "ID": "Azure_ABS",
-    "Params": [{
+    "Params": {
         "AzureStorageAccountConnectionString": "YOUR_ABS_CONNECTION_STRING",
         "AzureStorageContainer": "$web",
         "AzureStorageTargetDirectory": "MySite/UAT"
-    }]
+    }
 }]
 ```
 
@@ -53,13 +53,13 @@ _This section describes how you can call the Azure Blob Storage Deploy Handler f
 
 1. Complete the steps described in the [Setup](using-the-provided-azure-blob-storage-deploy-completion-handler.md#setup) section, above, on your SitecoreDXG Generation Server
 2. Create your completion handler data object for the Azure Blob Storage Deploy Handler, as described above in the [Parameters](using-the-provided-azure-blob-storage-deploy-completion-handler.md#parameters) section
-3. Stringify your completion handler data array into the following syntax:
+3. Stringify your completion handler data into the options parameter with the following syntax:
 
    ```javascript
-   '[{\"ID\":\"Azure_ABS\",\"Params\":[{\"AzureStorageAccountConnectionString\":\"DefaultEndpointsProtocol=https;AccountName=sitecoredxg;AccountKey=MY_ACCOUNT_KEY;EndpointSuffix=core.windows.net\",\"AzureStorageContainer\":\"$web\",\"AzureStorageTargetDirectory\":\"MySite/UAT\"}]}]'
+   '{\"CompletionHandlers\":[{\"ID\":\"Azure_ABS\",\"Params\":{\"AzureStorageAccountConnectionString\":\"DefaultEndpointsProtocol=https;AccountName=sitecoredxg;AccountKey=MY_ACCOUNT_KEY;EndpointSuffix=core.windows.net\",\"AzureStorageContainer\":\"$web\",\"AzureStorageTargetDirectory\":\"MySite/UAT\"}}]}'
    ```
 
-4. Pass the stringified completion handler data array to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
+4. Pass the stringified parameters object to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
    1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
    2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
 
