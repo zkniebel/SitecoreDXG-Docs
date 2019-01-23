@@ -49,6 +49,7 @@
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger/README.md)
   * [Executing Documentation Generation](how-to/creating-a-custom-trigger/executing-documentation-generation.md)
   * [Executing Meta-Data JSON Generation](how-to/creating-a-custom-trigger/executing-meta-data-json-generation.md)
+* [Slack and MS Teams Integration](how-to/slack-and-ms-teams-integration.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
 * [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
 
