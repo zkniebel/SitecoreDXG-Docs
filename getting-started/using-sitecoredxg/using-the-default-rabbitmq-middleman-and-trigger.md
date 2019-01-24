@@ -3,7 +3,7 @@
 The RabbitMQ Middleman can be called from any location using the following command-line syntax:
 
 ```text
-node rabbitmq-amqp-middleman CONNECTION_STRING ARCHITECURE_GET_URL GENERATION_QUEUE_NAME [OPTIONS_DATA]
+node rabbitmq-amqp-middleman CONNECTION_STRING ARCHITECURE_GET_URL GENERATION_QUEUE_NAME [OPTIONS]
 ```
 
 The middleman's parameters are as follows:
@@ -11,7 +11,7 @@ The middleman's parameters are as follows:
 * `CONNECTION_STRING`**:** the RabbitMQ connection string to connect to
 * `ARCHITECTURE_GET_URL`**:** the URL to get the serialized template architecture from
 * `GENERATION_QUEUE_NAME`**:** the name of the generation queue to add the serialized response to
-* `OPTIONS_DATA`**:** \(optional\) JSON-formatted string object that can include a documentation configuration object property and/or completion handlers array of objects with the handler ID and parameters for each handler that should be used; Should have the following syntax: 
+* `OPTIONS`**:** \(optional\) JSON-formatted string object that can include a documentation configuration object property and/or completion handlers array of objects with the handler ID and parameters for each handler that should be used; Should have the following syntax: 
 
 ```text
 '{\"DocumentationConfiguration\":{\"CommitAuthor\":\"ZacharyKniebel\",\"CommitHash\":\"0FE1D344\",\"CommitLink\":\"http://mygit.com/repo/myrepo/commits/0FE1D344\",\"DeployLink\":\"http://mydocs.com/foo/bar\"},\"CompletionHandlers\":[{\"ID\":\"MyHandler1\",\"Params\":{\"foo\":\"bar\"},{\"ID\":\"MyHandler2\"}]}'

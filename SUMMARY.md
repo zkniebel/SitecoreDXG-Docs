@@ -6,6 +6,8 @@
 
 * [SitecoreDXG: The Documentation Experience Generator](overview/overview.md)
 * [Comparison with SitecoreUML](overview/comparison-with-sitecoreuml.md)
+* [CI/CD Integration](overview/ci-cd-integration.md)
+* [Helix Dependency Validation](overview/helix-validation.md)
 
 ## Getting Started
 
@@ -49,9 +51,12 @@
 * [Creating a Custom Trigger](how-to/creating-a-custom-trigger/README.md)
   * [Executing Documentation Generation](how-to/creating-a-custom-trigger/executing-documentation-generation.md)
   * [Executing Meta-Data JSON Generation](how-to/creating-a-custom-trigger/executing-meta-data-json-generation.md)
-* [Slack and MS Teams Integration](how-to/slack-and-ms-teams-integration.md)
+* [Slack and MS Teams Integration](how-to/slack-and-ms-teams-integration/README.md)
+  * [Integrating with Slack via Webhooks](how-to/slack-and-ms-teams-integration/integrating-with-slack-via-webhooks.md)
+  * [Integrating with MS Teams via Webhooks](how-to/slack-and-ms-teams-integration/integrating-with-ms-teams-via-webhooks.md)
 * [Creating a Custom Completion Handler](how-to/creating-a-custom-completion-handler.md)
 * [Creating a Custom Middleman](how-to/creating-a-custom-middleman.md)
+* [Viewing Helix Validation Errors](how-to/viewing-helix-validation-errors.md)
 
 ## About the Generated Documentation
 
