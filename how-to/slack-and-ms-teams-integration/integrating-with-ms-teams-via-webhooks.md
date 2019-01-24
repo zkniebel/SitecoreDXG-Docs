@@ -1,4 +1,4 @@
-# Integrating with MS Teams via Webhooks
+# Integrating with Microsoft Teams via Webhooks
 
 As of version 1.1.0, SitecoreDXG now supports integration with Microsoft Teams for completion notifications via Incoming Webhooks. Like all logic that runs after generation completes, the Microsoft Teams integration is provided by a native [completion handler plugin](../../architecture/plugins/completion-handler-sub-component.md) that posts a message to the Microsoft Teams Incoming Webhook URL with some basic information about the generation and any [Helix validation errors](../../overview/helix-validation.md) that were identified. 
 
