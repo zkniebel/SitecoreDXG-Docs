@@ -75,7 +75,7 @@
   * [Template Folder View](about-the-generated-documentation/views/template-folder-view.md)
   * [Parent-Child Relationship View](about-the-generated-documentation/views/parent-child-relationship-view.md)
   * [Inheritance Relationship View](about-the-generated-documentation/views/inheritance-relationship-view.md)
-  * [Dependency View](about-the-generated-documentation/views/dependency-view.md)
+  * [Dependency Relationship View](about-the-generated-documentation/views/dependency-view.md)
 * [Diagrams](about-the-generated-documentation/diagrams/README.md)
   * [SitecoreUML Syntax](about-the-generated-documentation/diagrams/sitecoreuml-syntax.md)
   * [Templates Diagram](about-the-generated-documentation/diagrams/templates-diagram.md)
