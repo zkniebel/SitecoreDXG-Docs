@@ -14,5 +14,5 @@ Module Templates Dependencies Diagrams show the templates that live within the c
 
 Module Templates Dependents Diagrams show the templates that live within the context module as well as any templates \(and their containing layers and modules\) that depend on them. These diagrams are useful when planning for changes/assessing other templates that might be affected by a particular change to the context template, as well as a quick way to track down the source of an invalid dependent. A sample diagram is shown below.
 
-![Foundation.Multisite Module Templates Dependents Diagram from Habitat](../../.gitbook/assets/foundation.multisite-templatedependentsdiagram.png)
+![Foundation.Multisite Module Templates Dependents Diagram from Habitat](../../.gitbook/assets/foundation.multisite-templatedependentsdiagram%20%281%29.png)
 
