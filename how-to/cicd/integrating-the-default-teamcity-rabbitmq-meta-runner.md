@@ -1,6 +1,6 @@
 # Integrating the Default TeamCity RabbitMQ Meta-Runner
 
-SitecoreDXG includes a TeamCity meta-runner that can be found in the same folder as the [RabbitMQ middleman](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md). You can integrate the meta-runner into your CI/CD process by doing the following:
+SitecoreDXG includes a TeamCity meta-runner that can be found in the same folder as the [RabbitMQ middleman](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/). You can integrate the meta-runner into your CI/CD process by doing the following:
 
 1. Install the meta-runner on your TeamCity server by following the steps in the [TeamCity Meta-Runners documentation](https://confluence.jetbrains.com/display/TCD18/Working+with+Meta-Runner)
 2. [Install the default RabbitMQ Middleman](../../getting-started/installing-sitecoredxg/general-installation/optional-install-the-default-rabbitmq-middleman.md) \(excluding the TeamCity Meta-Runner definition XML file\) to your TeamCity build runner at a location that your runner will have permissions to access

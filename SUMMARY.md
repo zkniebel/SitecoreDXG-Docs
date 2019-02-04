@@ -27,7 +27,8 @@
 * [Upgrading and Downgrading](getting-started/upgrading-and-downgrading.md)
 * [Downloads](getting-started/downloads.md)
 * [Using SitecoreDXG](getting-started/using-sitecoredxg/README.md)
-  * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md)
+  * [Using the Default RabbitMQ Middleman and Trigger](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/README.md)
+    * [Using the DocumentationConfiguration Object](getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/using-the-documentationconfiguration-object.md)
   * [Using the Provided AWS S3 Deploy Completion Handler](getting-started/using-sitecoredxg/using-the-provided-aws-s3-deploy-completion-handler.md)
   * [Using the Provided Azure Blob Storage Deploy Completion Handler](getting-started/using-sitecoredxg/using-the-provided-azure-blob-storage-deploy-completion-handler.md)
 

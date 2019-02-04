@@ -10,7 +10,7 @@ See [Creating a Custom Completion Handler](../../how-to/creating-a-custom-comple
 
 ## How to Use a Completion Handlers
 
-The most popular way to completion handlers is to specify the completion handlers that you want to use in the input payload of the serialized data that is passed from the middleman to the trigger. The [default RabbitMQ middleman](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger.md) supports passing the completion handler ID and necessary parameters as a CLI argument, and the [TeamCity Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) exposes a field for doing the same.
+The most popular way to completion handlers is to specify the completion handlers that you want to use in the input payload of the serialized data that is passed from the middleman to the trigger. The [default RabbitMQ middleman](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/) supports passing the completion handler ID and necessary parameters as a CLI argument, and the [TeamCity Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) exposes a field for doing the same.
 
 SitecoreDXG also supports the ability to set a default handler or set of handlers to run should no handlers be specified to run in in the input payload. You can set the default handler\(s\) in the `./settings.js` file of your SitecoreDXG Generation Service application.
 

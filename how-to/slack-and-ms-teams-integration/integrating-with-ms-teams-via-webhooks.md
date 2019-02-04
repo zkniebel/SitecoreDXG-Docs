@@ -4,7 +4,7 @@ As of version 1.1.0, SitecoreDXG now supports integration with Microsoft Teams f
 
 ### Sample Notification
 
-Depending on the information that you send in via the `DocumentationConfiguration` property of the `OPTIONS` JSON object, you should see a notification similar to the following sample appear in your Teams channel after generation completes:
+Depending on the information that you send in via the `DocumentationConfiguration` property of the [`OPTIONS_FILE_PATH`](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/) JSON object, you should see a notification similar to the following sample appear in your Teams channel after generation completes:
 
 ![SitecoreDXG Generation Completion Notification Sample](../../.gitbook/assets/teams-notification.png)
 
@@ -14,7 +14,7 @@ Fortunately, Microsoft was nice enough to make setting up an Incoming Webhook fo
 
 1. Follow the instructions to [set up a custom Incoming Webhook](https://docs.microsoft.com/en-us/microsoftteams/platform/concepts/connectors/connectors-using#setting-up-a-custom-incoming-webhook) 
 2. Copy your new Incoming Webhook URL for use in the next step 
-3. Create/update the `OPTIONS` JSON object to be passed into your SitecoreDXG middleman to include the MS Teams completion handler and set its `Params.Url` property to your new Incoming Webhook URL, as follows:
+3. Create/update the [`OPTIONS_FILE_PATH`](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/) JSON object to be passed into your SitecoreDXG middleman to include the MS Teams completion handler and set its `Params.Url` property to your new Incoming Webhook URL, as follows:
 
 ```javascript
 {
@@ -28,20 +28,15 @@ Fortunately, Microsoft was nice enough to make setting up an Incoming Webhook fo
 }
 ```
 
-Serialized, your `OPTIONS` object should look something like the below:
+Note that this completion handler supports the default supported [`DocumentationConfiguration`](../../getting-started/using-sitecoredxg/using-the-default-rabbitmq-middleman-and-trigger/using-the-documentationconfiguration-object.md) properties, and will display their information in the notification, including:
 
-```javascript
-'{\"DocumentationConfiguration\":{},\"CompletionHandlers\":[{\"ID\":\"MSTeams_Notifier\",\"Params\":{\"Url\":\"https://outlook.office.com/webhook/XXXXXXXXXXXXXXXXXXXXXXXXX@XXXXXXXXXXXXXXXXXXXXXXXXXXXXX/IncomingWebhook/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX/XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX\"}}]}'
-```
-
-Note that this completion handler supports the default supported `DocumentationConfiguration` properties, and will display their information in the notification, including:
-
-1. `CommitAuthor`
-2. `CommitHash`
-3. `CommitLink`
-4. `DeployLink`
-5. `ProjectName`
-6. `EnvironmentName`
+1. `DocumentationTitle`
+2. `CommitAuthor`
+3. `CommitHash`
+4. `CommitLink`
+5. `DeployLink`
+6. `ProjectName`
+7. `EnvironmentName`
 
 
 

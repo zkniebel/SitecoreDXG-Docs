@@ -30,7 +30,7 @@ The Azure Blob Storage Deploy Completion Handler requires a JSON object paramete
 }
 ```
 
-In order to pass this object to the handler, it should be passed in as the `Params` object of the completion handler data. The following illustrates the completion handler data object for the Azure Blob Storage Deploy Completion Handler within the completion handler data array:
+In order to pass this object to the handler, it should be passed in as the `Params` object of the completion handler data in stored in the JSON file at the [`OPTIONS_FILE_PATH`](./). The following illustrates the completion handler data object for the Azure Blob Storage Deploy Completion Handler within the completion handler data array:
 
 ```javascript
 [{
@@ -52,14 +52,14 @@ Azure Blob Storage doesn't have a real concept of "folders", but it can be made 
 _This section describes how you can call the Azure Blob Storage Deploy Handler from the default RabbitMQ Middleman as well the provided TeamCity Meta-Runner._
 
 1. Complete the steps described in the [Setup](using-the-provided-azure-blob-storage-deploy-completion-handler.md#setup) section, above, on your SitecoreDXG Generation Server
-2. Create your completion handler data object for the Azure Blob Storage Deploy Handler, as described above in the [Parameters](using-the-provided-azure-blob-storage-deploy-completion-handler.md#parameters) section
-3. Stringify your completion handler data into the options parameter with the following syntax:
+2. Create your completion handler data object for the Azure Blob Storage Deploy Handler, as described above in the [Parameters](using-the-provided-azure-blob-storage-deploy-completion-handler.md#parameters) section, for example:
 
    ```javascript
-   '{\"CompletionHandlers\":[{\"ID\":\"Azure_ABS\",\"Params\":{\"AzureStorageAccountConnectionString\":\"DefaultEndpointsProtocol=https;AccountName=sitecoredxg;AccountKey=MY_ACCOUNT_KEY;EndpointSuffix=core.windows.net\",\"AzureStorageContainer\":\"$web\",\"AzureStorageTargetDirectory\":\"MySite/UAT\"}}]}'
+   {"CompletionHandlers":[{"ID":"Azure_ABS","Params":{"AzureStorageAccountConnectionString":"DefaultEndpointsProtocol=https;AccountName=sitecoredxg;AccountKey=MY_ACCOUNT_KEY;EndpointSuffix=core.windows.net","AzureStorageContainer":"$web","AzureStorageTargetDirectory":"MySite/UAT"}}]}
    ```
 
-4. Pass the stringified parameters object to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
-   1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](using-the-default-rabbitmq-middleman-and-trigger.md) for more information on the middleman parameters and syntax
+3. Save the JSON object to your [`OPTIONS_FILE_PATH`](using-the-default-rabbitmq-middleman-and-trigger/) 
+4. Pass the [`OPTIONS_FILE_PATH`](using-the-default-rabbitmq-middleman-and-trigger/) to the middleman so that it can be passed to the Trigger and subsequently to the Generator  
+   1. **If using the default RabbitMQ middleman:** see [Using the Default RabbitMQ Middleman and Trigger](using-the-default-rabbitmq-middleman-and-trigger/) for more information on the middleman parameters and syntax
    2. **If using the provided TeamCity Meta-Runner:** see [Integrating the Default TeamCity RabbitMQ Meta-Runner](../../how-to/cicd/integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more information on the fields and syntax
 
