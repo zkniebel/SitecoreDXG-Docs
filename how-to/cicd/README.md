@@ -1,7 +1,7 @@
 # CI/CD Integration
 
-SitecoreDXG was specifically designed for integration into CI/CD pipelines. To integrate SitecoreDXG into your CI/CD pipeline, you can do one of the following:
+SitecoreDXG was specifically designed for ease of integration into any CI/CD pipeline. To integrate SitecoreDXG into your CI/CD pipeline refer to the following options, based on which platform you are using:
 
-* **Execute the provided RabbitMQ middleman**, which is a simple node script that supports the execution of any custom _completion handlers_ that you may have installed on your _SitecoreDXG Generation Service_. See [Integrating the Default RabbitMQ Middleman](integrating-the-default-rabbitmq-middleman.md) for more.
-* **Use the provided TeamCity meta-runner**, which is based on the provided RabbitMQ middleman, in order to easily add a SitecoreDXG generation build step to your TeamCity-based CI/CD pipeline. See [Integrating the Default TeamCity RabbitMQ Meta-Runner](integrating-the-default-teamcity-rabbitmq-meta-runner.md) for more.
+* **TeamCity -** SitecoreDXG includes a TeamCity build runner \(i.e. a SitecoreDXG Build Step type that you select from the "runner" drop down\) that will help to accelerate your setup. See [Integrating the Default TeamCity RabbitMQ Meta-Runner](integrating-the-default-teamcity-rabbitmq-meta-runner.md) page for details on how to get set up.
+* **Other Platforms -** Remember that SitecoreDXG's execution flow is started by the middleman, and the included RabbitMQ middleman is CLI-driven. This means that you can integrate SitecoreDXG into your pipeline by adding a build-step to call your middleman from the command line. See [Integrating SitecoreDXG into your CI/CD Pipeline](integrating-sitecoredxg-into-your-ci-cd-pipeline.md) for more details, including setup instructions and a ready-to-use PowerShell script to call your middleman from a build step.
 
