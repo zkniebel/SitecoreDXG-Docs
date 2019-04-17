@@ -18,7 +18,7 @@
     * [2. Install RabbitMQ](getting-started/installing-sitecoredxg/general-installation/install-rabbitmq.md)
     * [3. Install the SitecoreUML Service for Sitecore](getting-started/installing-sitecoredxg/general-installation/install-the-sitecoreuml-service-for-sitecore.md)
     * [4. \(Optional\) Configure the Documentation Configuration Item for your Solution](getting-started/installing-sitecoredxg/general-installation/optional-configure-the-documentation-configuration-item-for-your-solution.md)
-    * [5. \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](getting-started/installing-sitecoredxg/general-installation/optional-install-the-default-rabbitmq-middleman.md)
+    * [5. Install the Default RabbitMQ Middleman in a Custom Location](getting-started/installing-sitecoredxg/general-installation/optional-install-the-default-rabbitmq-middleman.md)
     * [6. \(Optional\) Integrate SitecoreDXG into your CI/CD Pipeline](getting-started/installing-sitecoredxg/general-installation/6.-optional-integrate-sitecoredxg-into-your-ci-cd-pipeline.md)
   * [Developer Installation](getting-started/installing-sitecoredxg/advanced-installation/README.md)
     * [1. Install the SitecoreDXG Generation Service for Developers](getting-started/installing-sitecoredxg/advanced-installation/install-the-sitecoredxg-generation-service-for-developers.md)

@@ -1,4 +1,4 @@
-# 5. \(Optional\) Install the Default RabbitMQ Middleman in a Custom Location
+# 5. Install the Default RabbitMQ Middleman in a Custom Location
 
 When installing SitecoreDXG you can choose to install the default RabbitMQ Middleman that is included with the product. If you choose to install the default RabbitMQ Middleman, keep in mind that _**the middleman does not have to be installed on the same machine as the RabbitMQ server, the SitecoreDXG Generation Service or the Sitecore instance. However, it may need to be on the same machine as your CI/CD server, depending on your use-case.**_
 

@@ -12,6 +12,6 @@ With that in mind, the following instructions will guide you through the install
 2. [Install RabbitMQ](install-rabbitmq.md)
 3. [Install the SitecoreUML Service for Sitecore](install-the-sitecoreuml-service-for-sitecore.md)
 4. [\(Optional\) Configure the Documentation Configuration Item for your Solution](optional-configure-the-documentation-configuration-item-for-your-solution.md)
-5. [\(Optional\) Install the Default RabbitMQ Middleman in a Custom Location](optional-install-the-default-rabbitmq-middleman.md)
+5. [Install the Default RabbitMQ Middleman in a Custom Location](optional-install-the-default-rabbitmq-middleman.md)
 6. [\(Optional\) Integrate SitecoreDXG into your CI/CD Pipeline](6.-optional-integrate-sitecoredxg-into-your-ci-cd-pipeline.md)
 
